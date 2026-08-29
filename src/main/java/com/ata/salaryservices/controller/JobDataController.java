@@ -60,40 +60,10 @@ public class JobDataController {
         this.repository = repository;
     }
     
-    @GetMapping("/job_filter")
-    public Page<Object> getJobFilter(
-            @RequestParam Map<String, String> allParams,
-            @RequestParam(value = "sort", required = false) List<String> sortParams,
-            @RequestParam(name = "fields", required = false) String fieldsParam,
-            @PageableDefault(size = 20) Pageable pageable) {
-
-        List<Filter> filters = new ArrayList<>();//parseFilters(allParams);
-        List<String> fields = parseFields(fieldsParam);
-
-        List<SalaryRecord> filtered = repository.findAll().stream()
-                .filter(record -> filters.stream().allMatch(f -> f.matches(record)))
-                .collect(Collectors.toCollection(ArrayList::new));
-
-        sort(filtered, pageable.getSort());
-
-        int total = filtered.size();
-        int start = Math.min((int) pageable.getOffset(), total);
-        int end = Math.min(start + pageable.getPageSize(), total);
-
-        List<Object> content = filtered.subList(start, end).stream()
-                .map(record -> project(record, fields))
-                .collect(Collectors.toList());
-        
-        List<Object> content2 = filtered.stream()
-                .map(record -> project(record, fields))
-                .collect(Collectors.toList());
-
-        return new PageImpl<>(content, pageable, total);
-    }
-
-    @GetMapping("/job_data")
+    @GetMapping("atadev/job_data")
     public Page<Object> getJobData(
             @RequestParam Map<String, String> allParams,
+            @RequestParam(value = "sort", required = false) List<String> sortParams,
             @RequestParam(name = "fields", required = false) String fieldsParam,
             @PageableDefault(size = 20) Pageable pageable) {
 
@@ -113,9 +83,10 @@ public class JobDataController {
         List<Object> content = filtered.subList(start, end).stream()
                 .map(record -> project(record, fields))
                 .collect(Collectors.toList());
-
+        
         return new PageImpl<>(content, pageable, total);
     }
+
 
     private static Map<String, Function<SalaryRecord, Object>> buildFieldAccessors() {
         Map<String, Function<SalaryRecord, Object>> map = new LinkedHashMap<>();
