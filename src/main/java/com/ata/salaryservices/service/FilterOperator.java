@@ -1,7 +1,7 @@
-package com.ata.salaryservices.controller;
+package com.ata.salaryservices.service;
 
 /**
- * Relational operators supported by {@link JobDataController}'s
+ * Relational operators supported by {@link JobDataService}'s
  * {@code field[op]=value} filter syntax.
  */
 enum FilterOperator {
