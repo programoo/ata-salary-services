@@ -47,7 +47,7 @@ import java.util.stream.Collectors;
 @RestController
 public class JobDataController {
 
-    private static final Set<String> FILTERABLE_FIELDS = Set.of("jobTitle", "salary", "gender");
+    private static final Set<String> FILTERABLE_FIELDS = Set.of("job_title", "salary", "gender");
     private static final Pattern PARAM_KEY = Pattern.compile("^(\\w+)(?:\\[(\\w+)])?$");
 
     private static final Map<String, Function<SalaryRecord, Object>> FIELD_ACCESSORS = buildFieldAccessors();
@@ -66,8 +66,8 @@ public class JobDataController {
             @RequestParam(name = "fields", required = false) String fieldsParam,
             @PageableDefault(size = 20) Pageable pageable) {
 
-        List<Filter> filters = parseFilters(allParams);
-        List<String> fields = new ArrayList<>();//parseFields(fieldsParam);
+        List<Filter> filters = new ArrayList<>();//parseFilters(allParams);
+        List<String> fields = parseFields(fieldsParam);
 
         List<SalaryRecord> filtered = repository.findAll().stream()
                 .filter(record -> filters.stream().allMatch(f -> f.matches(record)))
