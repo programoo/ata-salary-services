@@ -48,7 +48,6 @@ import java.util.stream.Collectors;
 public class JobDataController {
 
     private static final Set<String> FILTERABLE_FIELDS = Set.of("jobTitle", "salary", "gender");
-    private static final Set<String> RESERVED_PARAMS = Set.of("page", "size", "sort", "fields");
     private static final Pattern PARAM_KEY = Pattern.compile("^(\\w+)(?:\\[(\\w+)])?$");
 
     private static final Map<String, Function<SalaryRecord, Object>> FIELD_ACCESSORS = buildFieldAccessors();
