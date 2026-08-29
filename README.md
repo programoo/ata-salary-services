@@ -93,3 +93,36 @@ Single record by id. Returns `404` if it doesn't exist.
 ```bash
 curl http://localhost:8080/api/salary-records/1
 ```
+
+### `GET /job_data`
+
+Paginated list of records filtered by relational operators, rather than the
+substring matching used by `/api/salary-records`. Supports `jobTitle`,
+`salary`, and `gender`.
+
+Each filter is passed as `field[op]=value`; omitting `[op]` defaults to `eq`.
+
+| Operator | Meaning              |
+|----------|----------------------|
+| `eq`     | equal (default)      |
+| `ne`     | not equal            |
+| `gt`     | greater than         |
+| `gte`    | greater than or equal|
+| `lt`     | less than            |
+| `lte`    | less than or equal   |
+
+`jobTitle` and `gender` compare case-insensitively as full strings (not
+substrings). `salary` comparisons parse the raw salary text into a number on
+a best-effort basis - `"$"` is ignored, commas are stripped, and a `k` suffix
+is expanded (`135k` -> `135000`). Records whose salary can't be parsed as a
+number (e.g. `"$24/hr"`) are excluded from salary filters and from salary
+sorting.
+
+```bash
+curl "http://localhost:8080/job_data?salary[gte]=120000"
+curl "http://localhost:8080/job_data?jobTitle[eq]=Software%20Engineer&gender[ne]=Male"
+curl "http://localhost:8080/job_data?salary[gte]=100000&salary[lt]=150000&sort=salary,desc"
+```
+
+Supports the same pagination params as `/api/salary-records` (`page`,
+`size`, `sort`), with `sort` limited to `jobTitle`, `salary`, and `gender`.
