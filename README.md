@@ -127,3 +127,35 @@ curl "http://localhost:8080/job_data?salary[gte]=100000&salary[lt]=150000&sort=s
 
 Supports the same pagination params as `/api/salary-records` (`page`,
 `size`, `sort`), with `sort` limited to `jobTitle`, `salary`, and `gender`.
+
+#### Sparse fieldsets
+
+Use `fields` to return only specific columns per record, instead of the full
+record:
+
+```bash
+curl "http://localhost:8080/job_data?fields=job_title,gender,salary"
+```
+
+```json
+{
+  "content": [
+    { "jobTitle": "Software Engineer", "gender": "Male", "salary": "135000" }
+  ],
+  ...
+}
+```
+
+- Any of the record's fields can be requested: `id`, `timestamp`, `employer`,
+  `location`, `jobTitle`, `yearsAtEmployer`, `yearsOfExperience`, `salary`,
+  `signingBonus`, `annualBonus`, `annualStockValueBonus`, `gender`,
+  `additionalComments`.
+- Field names are matched case- and underscore-insensitively, so
+  `job_title`, `jobTitle`, and `JOBTITLE` are all equivalent.
+- An unknown field name returns `400 Bad Request`.
+- Omitting `fields` returns the full record, as before.
+- Combines with filtering, sorting, and pagination:
+
+```bash
+curl "http://localhost:8080/job_data?fields=job_title,salary&salary[gte]=120000&sort=salary,desc"
+```
