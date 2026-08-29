@@ -118,6 +118,7 @@ is expanded (`135k` -> `135000`). Records whose salary can't be parsed as a
 number (e.g. `"$24/hr"`) are excluded from salary filters and from salary
 sorting.
 
+
 ```bash
 curl "http://localhost:8080/job_data?salary[gte]=120000"
 curl "http://localhost:8080/job_data?jobTitle[eq]=Software%20Engineer&gender[ne]=Male"
