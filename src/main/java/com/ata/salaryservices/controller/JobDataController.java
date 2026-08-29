@@ -60,6 +60,32 @@ public class JobDataController {
     public JobDataController(SalaryRecordRepository repository) {
         this.repository = repository;
     }
+    
+    @GetMapping("/job_filter")
+    public Page<Object> getJobFilter(
+            @RequestParam Map<String, String> allParams,
+            @RequestParam(name = "fields", required = false) String fieldsParam,
+            @PageableDefault(size = 20) Pageable pageable) {
+
+        List<Filter> filters = parseFilters(allParams);
+        List<String> fields = new ArrayList<>();//parseFields(fieldsParam);
+
+        List<SalaryRecord> filtered = repository.findAll().stream()
+                .filter(record -> filters.stream().allMatch(f -> f.matches(record)))
+                .collect(Collectors.toCollection(ArrayList::new));
+
+        //sort(filtered, pageable.getSort());
+
+        int total = filtered.size();
+        int start = Math.min((int) pageable.getOffset(), total);
+        int end = Math.min(start + pageable.getPageSize(), total);
+
+        List<Object> content = filtered.subList(start, end).stream()
+                .map(record -> project(record, fields))
+                .collect(Collectors.toList());
+
+        return new PageImpl<>(content, pageable, total);
+    }
 
     @GetMapping("/job_data")
     public Page<Object> getJobData(
@@ -146,9 +172,6 @@ public class JobDataController {
         List<Filter> filters = new ArrayList<>();
         for (Map.Entry<String, String> entry : allParams.entrySet()) {
             String key = entry.getKey();
-            if (RESERVED_PARAMS.contains(key) || !StringUtils.hasText(entry.getValue())) {
-                continue;
-            }
             Matcher matcher = PARAM_KEY.matcher(key);
             if (!matcher.matches()) {
                 continue;
