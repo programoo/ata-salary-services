@@ -63,6 +63,7 @@ public class JobDataController {
     @GetMapping("/job_filter")
     public Page<Object> getJobFilter(
             @RequestParam Map<String, String> allParams,
+            @RequestParam(value = "sort", required = false) List<String> sortParams,
             @RequestParam(name = "fields", required = false) String fieldsParam,
             @PageableDefault(size = 20) Pageable pageable) {
 
@@ -73,13 +74,17 @@ public class JobDataController {
                 .filter(record -> filters.stream().allMatch(f -> f.matches(record)))
                 .collect(Collectors.toCollection(ArrayList::new));
 
-        //sort(filtered, pageable.getSort());
+        sort(filtered, pageable.getSort());
 
         int total = filtered.size();
         int start = Math.min((int) pageable.getOffset(), total);
         int end = Math.min(start + pageable.getPageSize(), total);
 
         List<Object> content = filtered.subList(start, end).stream()
+                .map(record -> project(record, fields))
+                .collect(Collectors.toList());
+        
+        List<Object> content2 = filtered.stream()
                 .map(record -> project(record, fields))
                 .collect(Collectors.toList());
 
@@ -211,7 +216,7 @@ public class JobDataController {
 
     private Comparator<SalaryRecord> comparatorFor(String property) {
         return switch (property) {
-            case "jobTitle" -> Comparator.comparing(
+            case "job_title" -> Comparator.comparing(
                     r -> r.getJobTitle() == null ? "" : r.getJobTitle(), String.CASE_INSENSITIVE_ORDER);
             case "gender" -> Comparator.comparing(
                     r -> r.getGender() == null ? "" : r.getGender(), String.CASE_INSENSITIVE_ORDER);

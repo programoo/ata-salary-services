@@ -158,4 +158,11 @@ public class SalaryRecord {
     public void setAdditionalComments(String additionalComments) {
         this.additionalComments = additionalComments;
     }
+    
+    @Override
+    public String toString() {
+		return "jobTitle='" + jobTitle + '\'' +", salary='" + salary + '\'' +
+				", gender='" + gender + '\'';
+				
+	}
 }
