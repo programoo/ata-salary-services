@@ -41,6 +41,16 @@ public class JobDataService {
     private static final Map<String, String> FIELD_LOOKUP = FIELD_ACCESSORS.keySet().stream()
             .collect(Collectors.toMap(JobDataService::canonicalize, Function.identity()));
 
+    /**
+     * Free-text fields that hold a number (e.g. "135k", "$24/hr", "3 years") and so
+     * sort numerically rather than lexicographically.
+     */
+    private static final Set<String> NUMERIC_FIELDS = Set.of(
+            "yearsAtEmployer", "yearsOfExperience", "salary",
+            "signingBonus", "annualBonus", "annualStockValueBonus");
+
+    private static final Map<String, Comparator<SalaryRecord>> COMPARATORS = buildComparators();
+
     private final SalaryRecordRepository repository;
 
     public JobDataService(SalaryRecordRepository repository) {
@@ -83,6 +93,29 @@ public class JobDataService {
         map.put("annualStockValueBonus", SalaryRecord::getAnnualStockValueBonus);
         map.put("gender", SalaryRecord::getGender);
         map.put("additionalComments", SalaryRecord::getAdditionalComments);
+        return map;
+    }
+
+    private static Map<String, Comparator<SalaryRecord>> buildComparators() {
+        Map<String, Comparator<SalaryRecord>> map = new LinkedHashMap<>();
+        for (Map.Entry<String, Function<SalaryRecord, Object>> entry : FIELD_ACCESSORS.entrySet()) {
+            String field = entry.getKey();
+            Function<SalaryRecord, Object> accessor = entry.getValue();
+            Comparator<SalaryRecord> comparator;
+            if ("id".equals(field)) {
+                comparator = Comparator.comparing(record -> record.getId() == null ? Long.MIN_VALUE : record.getId());
+            } else if (NUMERIC_FIELDS.contains(field)) {
+                comparator = Comparator.comparing(
+                        record -> SalaryParser.parse((String) accessor.apply(record)).orElse(BigDecimal.ZERO));
+            } else {
+                comparator = Comparator.comparing(
+                        record -> {
+                            Object value = accessor.apply(record);
+                            return value == null ? "" : value.toString();
+                        }, String.CASE_INSENSITIVE_ORDER);
+            }
+            map.put(canonicalize(field), comparator);
+        }
         return map;
     }
 
@@ -166,15 +199,7 @@ public class JobDataService {
     }
 
     private Comparator<SalaryRecord> comparatorFor(String property) {
-        return switch (property) {
-            case "job_title" -> Comparator.comparing(
-                    r -> r.getJobTitle() == null ? "" : r.getJobTitle(), String.CASE_INSENSITIVE_ORDER);
-            case "gender" -> Comparator.comparing(
-                    r -> r.getGender() == null ? "" : r.getGender(), String.CASE_INSENSITIVE_ORDER);
-            case "salary" -> Comparator.comparing(
-                    r -> SalaryParser.parse(r.getSalary()).orElse(BigDecimal.ZERO));
-            default -> null;
-        };
+        return COMPARATORS.get(canonicalize(property));
     }
 
     private record Filter(String field, FilterOperator operator, String value) {

@@ -16,8 +16,15 @@ import java.util.Map;
  * are relational comparisons: eq (default when no operator is given), ne,
  * gt, gte, lt, lte. Salary comparisons parse the raw salary text into a
  * number on a best-effort basis (see {@link com.ata.salaryservices.util.SalaryParser}); records whose
- * salary can't be parsed are excluded from salary filters and from salary
- * sorting (treated as unparseable, not zero-adjacent).
+ * salary can't be parsed are excluded from salary filters.
+ * <p>
+ * Sorting is supported on every field via {@code sort}, e.g.
+ * {@code /atadev/job_data?sort=annual_bonus,desc&sort=jobTitle}. Sort field
+ * names are matched with the same case- and underscore-insensitive rules as
+ * {@code fields}. Numeric-looking fields (salary, the bonus fields, and the
+ * two years fields) sort by their parsed number, with unparseable or missing
+ * values treated as zero; all other fields sort case-insensitively as text,
+ * with null treated as empty. Unrecognized sort fields are ignored.
  * <p>
  * Supports sparse fieldsets via {@code fields}, e.g.
  * {@code /atadev/job_data?fields=job_title,gender,salary} returns only those
@@ -38,7 +45,7 @@ public class JobDataController {
     public Page<Object> getJobData(
             @RequestParam Map<String, String> allParams,
             @RequestParam(name = "fields", required = false) String fieldsParam,
-            @PageableDefault(size = 20) Pageable pageable) {
+            @PageableDefault(size = 100) Pageable pageable) {
 
         return jobDataService.getJobData(allParams, fieldsParam, pageable);
     }
