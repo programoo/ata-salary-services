@@ -1,0 +1,158 @@
+{
+  "info": {
+    "_postman_id": "1da8a4e1-e441-4dd7-a0ae-df7eb85dd2b0",
+    "name": "ata-services",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "42092"
+  },
+  "item": [
+    {
+      "name": "status",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080"
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "job_data_filter",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/atadev/job_data?job_title=Software Engineer&salary=100000&gender=Male",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "atadev",
+            "job_data"
+          ],
+          "query": [
+            {
+              "key": "job_title",
+              "value": "Software Engineer"
+            },
+            {
+              "key": "salary",
+              "value": "100000"
+            },
+            {
+              "key": "gender",
+              "value": "Male"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "job_data_filter_operation",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/atadev/job_data?job_title=Software Engineer&salary[lte]=100000&gender=Male",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "atadev",
+            "job_data"
+          ],
+          "query": [
+            {
+              "key": "job_title",
+              "value": "Software Engineer"
+            },
+            {
+              "key": "salary[lte]",
+              "value": "100000"
+            },
+            {
+              "key": "gender",
+              "value": "Male"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "job_data_sparse",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/atadev/job_data?fields=job_title,gender,salary,employer,id,timestamp,location,yearsAtEmployer,yearsOfExperience,signingBonus,annualBonus,annualStockValueBonus",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "atadev",
+            "job_data"
+          ],
+          "query": [
+            {
+              "key": "fields",
+              "value": "job_title,gender,salary,employer,id,timestamp,location,yearsAtEmployer,yearsOfExperience,signingBonus,annualBonus,annualStockValueBonus"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "job_data_sort",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/atadev/job_data?sort=years_at_employer,desc&sort=timestamp,desc&salary=100000",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "atadev",
+            "job_data"
+          ],
+          "query": [
+            {
+              "key": "sort",
+              "value": "years_at_employer,desc"
+            },
+            {
+              "key": "sort",
+              "value": "timestamp,desc"
+            },
+            {
+              "key": "fields",
+              "value": "id,salary,gender,job_title",
+              "disabled": true
+            },
+            {
+              "key": "salary",
+              "value": "100000"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
