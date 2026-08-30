@@ -168,6 +168,37 @@ curl "http://localhost:8080/atadev/job_data?fields=job_title,gender,salary"
 curl "http://localhost:8080/atadev/job_data?fields=job_title,salary&salary[gte]=120000&sort=salary,desc"
 ```
 
+## Postman collection
+
+A ready-to-run Postman collection lives at
+`postman/ata-services.postman_collection.json` (Postman schema
+v2.1.0). It exercises the health check and the main `job_data` query styles
+against a locally running app.
+
+To use it:
+
+1. Start the app (`mvn spring-boot:run`) so it is listening on
+   `http://localhost:8080`.
+2. In Postman, choose **Import**, then drag in (or browse to)
+   `postman/ata-services.postman_collection.json`.
+3. Open the imported **ata-services** collection and send any request.
+
+The requests are hard-coded to `localhost:8080`; if you run the app on
+another host or port, edit the URLs (or replace the host with a Postman
+variable) after importing.
+
+| Request | What it shows |
+|---------|---------------|
+| `status` | `GET /` health check |
+| `job_data_filter` | Default `eq` filtering on `job_title`, `salary`, and `gender` |
+| `job_data_filter_operation` | Operator syntax, e.g. `salary[lte]=100000` |
+| `job_data_sparse` | `fields=` sparse fieldsets across every record field |
+| `job_data_sort` | Repeated `sort=` params for a multi-level sort, plus a disabled `fields` param you can re-enable |
+
+Note that `job_data_filter_operation` sends an unencoded `salary[lte]` key,
+which the app accepts thanks to `server.tomcat.relaxed-query-chars` (see
+[Implementation notes](#implementation-notes)).
+
 ## Number parsing
 
 `SalaryParser` extracts a leading number from raw free text: a `$` prefix is
