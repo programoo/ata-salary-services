@@ -168,6 +168,76 @@ curl "http://localhost:8080/atadev/job_data?fields=job_title,gender,salary"
 curl "http://localhost:8080/atadev/job_data?fields=job_title,salary&salary[gte]=120000&sort=salary,desc"
 ```
 
+## Orders API
+
+Backend for [ata-order-web](../ata-order-web). It replaces that app's MSW mock
+handlers (`src/mocks/handlers.ts`) behind the same URLs and JSON shapes, so the
+web app needs no code changes - point it here with:
+
+```bash
+# ata-order-web/.env.local
+VITE_API_BASE_URL=http://localhost:8080/api
+```
+
+Setting that variable also switches the mock off. CORS allows the Vite dev
+server (`http://localhost:5173`) by default; change
+`app.cors.allowed-origins` for other origins.
+
+On first run the service imports `src/main/resources/data/orders.json`: the
+same 123 seeded orders the mock generated, exported from
+`ata-order-web/src/mocks/data.ts`.
+
+Errors on these endpoints are returned as `{ "message": "..." }`, which the
+web app shows to the user.
+
+### `GET /api/orders`
+
+```bash
+curl "http://localhost:8080/api/orders?period=TRANSMISSION&status=WAITING&from=2022-12-01&to=2023-01-31&page=0&size=20&sort=orderDateTime,desc"
+```
+
+```json
+{
+  "content": [
+    {
+      "id": "ord-00000085", "account": "00000085", "operation": "SELL", "symbol": null,
+      "description": "TORONTO-DOMINION BANK", "quantity": 5, "filledQuantity": 0,
+      "price": { "amount": 672, "currency": "USD" }, "status": "WAITING",
+      "orderDateTime": "2023-01-30T23:36:54.019Z", "expirationDateTime": "2023-01-30T23:36:54.019Z",
+      "referenceNo": "58997776", "externalRef": "2-EH1SK5L-5"
+    }
+  ],
+  "page": { "size": 20, "number": 0, "totalElements": 123, "totalPages": 7 }
+}
+```
+
+| Param    | Notes |
+|----------|-------|
+| `period` | Optional. Only `TRANSMISSION` exists in MVP-1, so it is validated but does not narrow results. |
+| `status` | Optional. Only `WAITING` exists in MVP-1. |
+| `from`, `to` | Optional `yyyy-MM-dd`, inclusive calendar days in UTC. `from` after `to` returns `400`. |
+| `page`, `size` | 0-indexed page (default `0`), page size (default `20`). |
+| `sort`   | `field,asc|desc`, default `orderDateTime,desc`. Any summary field except `id`. |
+
+- Filtering, sorting and paging run in the database (unlike `job_data`).
+- `price` sorts by its amount; quantities sort numerically and dates as instants.
+- Ties are broken by `id`, so paging stays stable when many rows share a sort
+  key (e.g. `sort=status`) and infinite scroll never repeats a row.
+- An unknown sort field or an invalid enum value returns `400`.
+
+### `GET /api/orders/{id}/detail`
+
+The expanded detail panel: client, net amount, exchange rate, O/S limit,
+warnings, and `availableActions` (`["ACCEPT", "REJECT"]` for a `WAITING`
+order - decided by the server, not the UI). Unknown id returns `404`.
+
+### `POST /api/orders/{id}/actions/{action}`
+
+`action` is `ACCEPT` or `REJECT`. Returns `{ "ok": true }`; `404` for an
+unknown order, `409` if the action is not available for the order's status.
+Status transitions are not modelled yet (MVP-1 has only `WAITING`), so the
+order is left unchanged.
+
 ## Postman collection
 
 A ready-to-run Postman collection lives at

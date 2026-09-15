@@ -1,0 +1,4799 @@
+[
+  {
+    "id": "ord-00000000",
+    "account": "10000000",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 32,
+    "filledQuantity": 12,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-28T04:53:44.075Z",
+    "expirationDateTime": "2022-12-28T04:53:44.075Z",
+    "referenceNo": "61246428",
+    "externalRef": "2-BNEHJRZ-0",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 248.12,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000001",
+    "account": "00000001",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 5,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-17T03:03:31.423Z",
+    "expirationDateTime": "2023-01-17T03:03:31.423Z",
+    "referenceNo": "68294518",
+    "externalRef": "2-ENDJXBV-1",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 38.77,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000002",
+    "account": "00000002",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 32,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-22T14:39:57.643Z",
+    "expirationDateTime": "2023-01-22T14:39:57.643Z",
+    "referenceNo": "97038629",
+    "externalRef": "2-TXWCR07-2",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 248.12,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000003",
+    "account": "00000003",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 32,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 672,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-22T10:44:50.288Z",
+    "expirationDateTime": "2023-01-22T10:44:50.288Z",
+    "referenceNo": "61893650",
+    "externalRef": "2-SHQ6WM5-3",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 183.43,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000004",
+    "account": "00000004",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 90,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 526,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-20T13:34:38.378Z",
+    "expirationDateTime": "2023-01-20T13:34:38.378Z",
+    "referenceNo": "31085725",
+    "externalRef": "2-P53CWQP-4",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 403.81,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000005",
+    "account": "00000005",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 60,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 135,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-07T22:37:45.155Z",
+    "expirationDateTime": "2022-12-07T22:37:45.155Z",
+    "referenceNo": "76351052",
+    "externalRef": "2-PXLXR07-5",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 69.09,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000006",
+    "account": "00000006",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 800,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 369,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-05T19:10:45.284Z",
+    "expirationDateTime": "2022-12-05T19:10:45.284Z",
+    "referenceNo": "23968503",
+    "externalRef": "2-CPQRB4H-6",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 2518.06,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000007",
+    "account": "00000007",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 5,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-18T20:00:28.462Z",
+    "expirationDateTime": "2022-12-18T20:00:28.462Z",
+    "referenceNo": "32954835",
+    "externalRef": "2-C0K6Y1P-7",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 28.15,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000008",
+    "account": "00000008",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 90,
+    "filledQuantity": 21,
+    "price": {
+      "amount": 369,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-27T05:09:39.367Z",
+    "expirationDateTime": "2022-12-27T05:09:39.367Z",
+    "referenceNo": "93590162",
+    "externalRef": "2-UDCKHJQ-8",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 283.28,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000009",
+    "account": "00000009",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "ROYAL BANK OF CANADA",
+    "quantity": 800,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 744,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-24T18:43:26.098Z",
+    "expirationDateTime": "2023-01-24T18:43:26.098Z",
+    "referenceNo": "90622018",
+    "externalRef": "2-LOB0ZAN-9",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5077.06,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000010",
+    "account": "00000010",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 1000,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-20T00:57:40.215Z",
+    "expirationDateTime": "2023-01-20T00:57:40.215Z",
+    "referenceNo": "61685159",
+    "externalRef": "2-NNHCQ41-0",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5629.8,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000011",
+    "account": "00000011",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "ROYAL BANK OF CANADA",
+    "quantity": 60,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-30T04:52:38.619Z",
+    "expirationDateTime": "2022-12-30T04:52:38.619Z",
+    "referenceNo": "95996905",
+    "externalRef": "2-9Z9GWDE-1",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 337.79,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000012",
+    "account": "00000012",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 90,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-24T13:05:11.607Z",
+    "expirationDateTime": "2023-01-24T13:05:11.607Z",
+    "referenceNo": "93298549",
+    "externalRef": "2-QQK99UV-2",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 697.84,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000013",
+    "account": "00000013",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 11,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 744,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-21T20:32:34.272Z",
+    "expirationDateTime": "2022-12-21T20:32:34.272Z",
+    "referenceNo": "50100124",
+    "externalRef": "2-5C62DN8-3",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 69.81,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000014",
+    "account": "00000014",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 90,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 526,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-06T02:18:36.490Z",
+    "expirationDateTime": "2022-12-06T02:18:36.490Z",
+    "referenceNo": "46280237",
+    "externalRef": "2-8CZ7T3B-4",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 403.81,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000015",
+    "account": "00000015",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 32,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 526,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-27T03:57:44.288Z",
+    "expirationDateTime": "2022-12-27T03:57:44.288Z",
+    "referenceNo": "17396210",
+    "externalRef": "2-ZGVSFER-5",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 143.58,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000016",
+    "account": "00000016",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "ROYAL BANK OF CANADA",
+    "quantity": 11,
+    "filledQuantity": 1,
+    "price": {
+      "amount": 369,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-06T15:01:46.059Z",
+    "expirationDateTime": "2023-01-06T15:01:46.059Z",
+    "referenceNo": "80402560",
+    "externalRef": "2-S8DNI56-6",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 34.62,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000017",
+    "account": "00000017",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 11,
+    "filledQuantity": 5,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-22T04:30:35.617Z",
+    "expirationDateTime": "2022-12-22T04:30:35.617Z",
+    "referenceNo": "12521365",
+    "externalRef": "2-FRKM2G4-7",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 61.93,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000018",
+    "account": "00000018",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 800,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 672,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-28T12:34:49.575Z",
+    "expirationDateTime": "2023-01-28T12:34:49.575Z",
+    "referenceNo": "73352666",
+    "externalRef": "2-0JU7WKK-8",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 4585.73,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000019",
+    "account": "00000019",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 800,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-17T11:18:53.973Z",
+    "expirationDateTime": "2023-01-17T11:18:53.973Z",
+    "referenceNo": "65190359",
+    "externalRef": "2-LK45KNI-9",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 4503.84,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000020",
+    "account": "00000020",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 60,
+    "filledQuantity": 6,
+    "price": {
+      "amount": 744,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-07T19:20:32.993Z",
+    "expirationDateTime": "2022-12-07T19:20:32.993Z",
+    "referenceNo": "99476654",
+    "externalRef": "2-9YZN6WS-0",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 380.78,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000021",
+    "account": "00000021",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 5,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 526,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-31T05:32:50.211Z",
+    "expirationDateTime": "2022-12-31T05:32:50.211Z",
+    "referenceNo": "62830690",
+    "externalRef": "2-CMKBVBC-1",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 22.43,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000022",
+    "account": "00000022",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 60,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 526,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-15T23:32:42.367Z",
+    "expirationDateTime": "2022-12-15T23:32:42.367Z",
+    "referenceNo": "56782891",
+    "externalRef": "2-BCY37NV-2",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 269.21,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000023",
+    "account": "00000023",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 1000,
+    "filledQuantity": 109,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-21T09:23:13.642Z",
+    "expirationDateTime": "2023-01-21T09:23:13.642Z",
+    "referenceNo": "11972050",
+    "externalRef": "2-51IF9N8-3",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 7753.77,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000024",
+    "account": "00000024",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "ROYAL BANK OF CANADA",
+    "quantity": 60,
+    "filledQuantity": 12,
+    "price": {
+      "amount": 526,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-16T06:24:16.777Z",
+    "expirationDateTime": "2023-01-16T06:24:16.777Z",
+    "referenceNo": "23458171",
+    "externalRef": "2-OYT36ZQ-4",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 269.21,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000025",
+    "account": "00000025",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 1000,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-09T00:31:44.235Z",
+    "expirationDateTime": "2023-01-09T00:31:44.235Z",
+    "referenceNo": "56575077",
+    "externalRef": "2-BUF1W7H-5",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 7753.77,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000026",
+    "account": "00000026",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 800,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 672,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-21T11:32:26.526Z",
+    "expirationDateTime": "2023-01-21T11:32:26.526Z",
+    "referenceNo": "20261649",
+    "externalRef": "2-AOWN0QK-6",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 4585.73,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000027",
+    "account": "00000027",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 1000,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-18T16:47:54.353Z",
+    "expirationDateTime": "2023-01-18T16:47:54.353Z",
+    "referenceNo": "82675571",
+    "externalRef": "2-CX10UOJ-7",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5629.8,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000028",
+    "account": "00000028",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 60,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-26T05:22:32.638Z",
+    "expirationDateTime": "2022-12-26T05:22:32.638Z",
+    "referenceNo": "46463883",
+    "externalRef": "2-8LWY417-8",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 337.79,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000029",
+    "account": "00000029",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 11,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 135,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-27T12:29:42.078Z",
+    "expirationDateTime": "2022-12-27T12:29:42.078Z",
+    "referenceNo": "82666716",
+    "externalRef": "2-NZTHLAP-9",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 12.67,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000030",
+    "account": "00000030",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 800,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 672,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-05T17:12:54.407Z",
+    "expirationDateTime": "2023-01-05T17:12:54.407Z",
+    "referenceNo": "44806979",
+    "externalRef": "2-3ATYAT2-0",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 4585.73,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000031",
+    "account": "00000031",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "ROYAL BANK OF CANADA",
+    "quantity": 1000,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 369,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-06T11:54:28.269Z",
+    "expirationDateTime": "2023-01-06T11:54:28.269Z",
+    "referenceNo": "42077603",
+    "externalRef": "2-P6ZKR8O-1",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 3147.57,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000032",
+    "account": "00000032",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 11,
+    "filledQuantity": 1,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-25T02:32:46.315Z",
+    "expirationDateTime": "2023-01-25T02:32:46.315Z",
+    "referenceNo": "20984211",
+    "externalRef": "2-DWCJSM5-2",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 61.93,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000033",
+    "account": "00000033",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "ROYAL BANK OF CANADA",
+    "quantity": 1000,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 135,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-19T16:38:06.630Z",
+    "expirationDateTime": "2023-01-19T16:38:06.630Z",
+    "referenceNo": "80981770",
+    "externalRef": "2-1XOC0F9-3",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 1151.55,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000034",
+    "account": "00000034",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 800,
+    "filledQuantity": 117,
+    "price": {
+      "amount": 526,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-20T19:32:51.692Z",
+    "expirationDateTime": "2023-01-20T19:32:51.692Z",
+    "referenceNo": "25055798",
+    "externalRef": "2-NSU72Y3-4",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 3589.42,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000035",
+    "account": "00000035",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 11,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 672,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-15T15:22:53.991Z",
+    "expirationDateTime": "2022-12-15T15:22:53.991Z",
+    "referenceNo": "29234684",
+    "externalRef": "2-LRC84IX-5",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 63.05,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000036",
+    "account": "00000036",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 1000,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-13T08:04:17.234Z",
+    "expirationDateTime": "2022-12-13T08:04:17.234Z",
+    "referenceNo": "40276496",
+    "externalRef": "2-WMTAQFE-6",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 7753.77,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000037",
+    "account": "00000037",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 1000,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-23T22:53:06.996Z",
+    "expirationDateTime": "2023-01-23T22:53:06.996Z",
+    "referenceNo": "48385087",
+    "externalRef": "2-DVYDI2T-7",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5629.8,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000038",
+    "account": "00000038",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 800,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-20T17:22:04.663Z",
+    "expirationDateTime": "2022-12-20T17:22:04.663Z",
+    "referenceNo": "73221739",
+    "externalRef": "2-AZRD8ER-8",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 6203.02,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000039",
+    "account": "00000039",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 11,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-21T04:11:06.002Z",
+    "expirationDateTime": "2022-12-21T04:11:06.002Z",
+    "referenceNo": "12292498",
+    "externalRef": "2-4RNFXI6-9",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 85.29,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000040",
+    "account": "00000040",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 60,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-24T00:52:42.737Z",
+    "expirationDateTime": "2023-01-24T00:52:42.737Z",
+    "referenceNo": "12507303",
+    "externalRef": "2-4RGWXM3-0",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 337.79,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000041",
+    "account": "00000041",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "ROYAL BANK OF CANADA",
+    "quantity": 60,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 526,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-08T14:46:20.648Z",
+    "expirationDateTime": "2023-01-08T14:46:20.648Z",
+    "referenceNo": "69315692",
+    "externalRef": "2-6BKDO7X-1",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 269.21,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000042",
+    "account": "00000042",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 1000,
+    "filledQuantity": 500,
+    "price": {
+      "amount": 744,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-04T07:36:25.053Z",
+    "expirationDateTime": "2023-01-04T07:36:25.053Z",
+    "referenceNo": "37656820",
+    "externalRef": "2-F1IS0F5-2",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 6346.32,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000043",
+    "account": "00000043",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 5,
+    "filledQuantity": 2,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-09T20:28:03.966Z",
+    "expirationDateTime": "2023-01-09T20:28:03.966Z",
+    "referenceNo": "74497316",
+    "externalRef": "2-455BO6K-3",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 28.15,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000044",
+    "account": "00000044",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 60,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 672,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-02T19:47:27.817Z",
+    "expirationDateTime": "2022-12-02T19:47:27.817Z",
+    "referenceNo": "19399975",
+    "externalRef": "2-RG1YKPH-4",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 343.93,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000045",
+    "account": "00000045",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 800,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 744,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-04T05:59:37.972Z",
+    "expirationDateTime": "2022-12-04T05:59:37.972Z",
+    "referenceNo": "47779153",
+    "externalRef": "2-Z0L5S6B-5",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5077.06,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000046",
+    "account": "00000046",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 11,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 672,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-21T16:30:22.946Z",
+    "expirationDateTime": "2022-12-21T16:30:22.946Z",
+    "referenceNo": "14997937",
+    "externalRef": "2-R5AIID2-6",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 63.05,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000047",
+    "account": "00000047",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 11,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-22T00:17:54.474Z",
+    "expirationDateTime": "2022-12-22T00:17:54.474Z",
+    "referenceNo": "38504496",
+    "externalRef": "2-07GLSO2-7",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 61.93,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000048",
+    "account": "00000048",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 800,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 369,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-21T13:13:55.427Z",
+    "expirationDateTime": "2022-12-21T13:13:55.427Z",
+    "referenceNo": "28852831",
+    "externalRef": "2-DVNTDER-8",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 2518.06,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000049",
+    "account": "00000049",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 1000,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 672,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-04T11:44:45.100Z",
+    "expirationDateTime": "2023-01-04T11:44:45.100Z",
+    "referenceNo": "16934266",
+    "externalRef": "2-D8Y39XK-9",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5732.16,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000050",
+    "account": "00000050",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 5,
+    "filledQuantity": 1,
+    "price": {
+      "amount": 135,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-25T16:24:58.695Z",
+    "expirationDateTime": "2022-12-25T16:24:58.695Z",
+    "referenceNo": "48402421",
+    "externalRef": "2-YKP9OTD-0",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5.76,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000051",
+    "account": "00000051",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 11,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-09T08:51:10.452Z",
+    "expirationDateTime": "2022-12-09T08:51:10.452Z",
+    "referenceNo": "48841947",
+    "externalRef": "2-ZD19DGL-1",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 61.93,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000052",
+    "account": "00000052",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 5,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 672,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-15T13:41:08.972Z",
+    "expirationDateTime": "2022-12-15T13:41:08.972Z",
+    "referenceNo": "13079580",
+    "externalRef": "2-KFFHF4V-2",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 28.66,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000053",
+    "account": "00000053",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 1000,
+    "filledQuantity": 453,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-17T00:09:29.373Z",
+    "expirationDateTime": "2022-12-17T00:09:29.373Z",
+    "referenceNo": "81680578",
+    "externalRef": "2-YUFJKWI-3",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5629.8,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000054",
+    "account": "00000054",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 32,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 744,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-28T21:03:03.652Z",
+    "expirationDateTime": "2022-12-28T21:03:03.652Z",
+    "referenceNo": "78322515",
+    "externalRef": "2-RQK4CQK-4",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 203.08,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000055",
+    "account": "00000055",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 800,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-03T22:37:13.972Z",
+    "expirationDateTime": "2023-01-03T22:37:13.972Z",
+    "referenceNo": "74873040",
+    "externalRef": "2-U9RXBKV-5",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 6203.02,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000056",
+    "account": "00000056",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 1000,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 744,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-09T04:56:14.938Z",
+    "expirationDateTime": "2023-01-09T04:56:14.938Z",
+    "referenceNo": "82655604",
+    "externalRef": "2-728S9CI-6",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 6346.32,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000057",
+    "account": "00000057",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 90,
+    "filledQuantity": 3,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-24T00:19:00.252Z",
+    "expirationDateTime": "2022-12-24T00:19:00.252Z",
+    "referenceNo": "23022540",
+    "externalRef": "2-JZAB6N8-7",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 697.84,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000058",
+    "account": "00000058",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 800,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-31T12:57:30.669Z",
+    "expirationDateTime": "2022-12-31T12:57:30.669Z",
+    "referenceNo": "85225850",
+    "externalRef": "2-EFHFBXN-8",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 6203.02,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000059",
+    "account": "00000059",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 60,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 135,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-12T16:24:48.642Z",
+    "expirationDateTime": "2022-12-12T16:24:48.642Z",
+    "referenceNo": "10942279",
+    "externalRef": "2-9KQKPK6-9",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 69.09,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000060",
+    "account": "00000060",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 90,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 135,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-20T22:58:38.318Z",
+    "expirationDateTime": "2022-12-20T22:58:38.318Z",
+    "referenceNo": "41865909",
+    "externalRef": "2-CI7YMKZ-0",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 103.64,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000061",
+    "account": "00000061",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 11,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 526,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-17T23:31:58.147Z",
+    "expirationDateTime": "2023-01-17T23:31:58.147Z",
+    "referenceNo": "49568147",
+    "externalRef": "2-HS6DKWW-1",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 49.35,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000062",
+    "account": "00000062",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 5,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 135,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-20T04:39:00.210Z",
+    "expirationDateTime": "2023-01-20T04:39:00.210Z",
+    "referenceNo": "74265336",
+    "externalRef": "2-0CJ8HVY-2",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5.76,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000063",
+    "account": "00000063",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "ROYAL BANK OF CANADA",
+    "quantity": 1000,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 526,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-16T09:45:23.775Z",
+    "expirationDateTime": "2023-01-16T09:45:23.775Z",
+    "referenceNo": "21765909",
+    "externalRef": "2-05UG0EG-3",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 4486.78,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000064",
+    "account": "00000064",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 1000,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-12T19:32:32.574Z",
+    "expirationDateTime": "2023-01-12T19:32:32.574Z",
+    "referenceNo": "47681400",
+    "externalRef": "2-K19JLYT-4",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 7753.77,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000065",
+    "account": "00000065",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "ROYAL BANK OF CANADA",
+    "quantity": 800,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 135,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-01T00:00:17.947Z",
+    "expirationDateTime": "2022-12-01T00:00:17.947Z",
+    "referenceNo": "90716062",
+    "externalRef": "2-U7FLBRM-5",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 921.24,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000066",
+    "account": "00000066",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 90,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-23T18:32:53.212Z",
+    "expirationDateTime": "2023-01-23T18:32:53.212Z",
+    "referenceNo": "67127561",
+    "externalRef": "2-EI96O3F-6",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 506.68,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000067",
+    "account": "00000067",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 90,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 526,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-06T14:34:29.364Z",
+    "expirationDateTime": "2023-01-06T14:34:29.364Z",
+    "referenceNo": "40560139",
+    "externalRef": "2-1WH0OF0-7",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 403.81,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000068",
+    "account": "00000068",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 90,
+    "filledQuantity": 45,
+    "price": {
+      "amount": 744,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-19T07:35:27.295Z",
+    "expirationDateTime": "2022-12-19T07:35:27.295Z",
+    "referenceNo": "41003561",
+    "externalRef": "2-9B59XL0-8",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 571.17,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000069",
+    "account": "00000069",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 32,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-12T16:17:19.714Z",
+    "expirationDateTime": "2022-12-12T16:17:19.714Z",
+    "referenceNo": "55217762",
+    "externalRef": "2-M0TC500-9",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 248.12,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000070",
+    "account": "00000070",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 32,
+    "filledQuantity": 1,
+    "price": {
+      "amount": 135,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-16T08:36:20.120Z",
+    "expirationDateTime": "2023-01-16T08:36:20.120Z",
+    "referenceNo": "65746655",
+    "externalRef": "2-9XOOTQW-0",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 36.85,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000071",
+    "account": "00000071",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 5,
+    "filledQuantity": 2,
+    "price": {
+      "amount": 135,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-12T11:09:28.781Z",
+    "expirationDateTime": "2022-12-12T11:09:28.781Z",
+    "referenceNo": "64693253",
+    "externalRef": "2-Y25U2QE-1",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5.76,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000072",
+    "account": "00000072",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 60,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 744,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-13T02:32:11.786Z",
+    "expirationDateTime": "2023-01-13T02:32:11.786Z",
+    "referenceNo": "88635810",
+    "externalRef": "2-5L3MAVX-2",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 380.78,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000073",
+    "account": "00000073",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 5,
+    "filledQuantity": 1,
+    "price": {
+      "amount": 744,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-23T14:39:30.345Z",
+    "expirationDateTime": "2022-12-23T14:39:30.345Z",
+    "referenceNo": "25907225",
+    "externalRef": "2-FHN75TF-3",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 31.73,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000074",
+    "account": "00000074",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "ROYAL BANK OF CANADA",
+    "quantity": 90,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 526,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-28T18:27:33.256Z",
+    "expirationDateTime": "2023-01-28T18:27:33.256Z",
+    "referenceNo": "73438474",
+    "externalRef": "2-7QYCUGU-4",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 403.81,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000075",
+    "account": "00000075",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 800,
+    "filledQuantity": 308,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-15T23:18:03.370Z",
+    "expirationDateTime": "2023-01-15T23:18:03.370Z",
+    "referenceNo": "46197887",
+    "externalRef": "2-9AY0UHA-5",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 4503.84,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000076",
+    "account": "00000076",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "ROYAL BANK OF CANADA",
+    "quantity": 800,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-05T18:09:10.083Z",
+    "expirationDateTime": "2023-01-05T18:09:10.083Z",
+    "referenceNo": "61444613",
+    "externalRef": "2-D0MJB6K-6",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 4503.84,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000077",
+    "account": "00000077",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 90,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-20T06:17:24.196Z",
+    "expirationDateTime": "2023-01-20T06:17:24.196Z",
+    "referenceNo": "50082213",
+    "externalRef": "2-R2Y8S9Q-7",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 697.84,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000078",
+    "account": "00000078",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 1000,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 526,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-07T00:23:23.294Z",
+    "expirationDateTime": "2022-12-07T00:23:23.294Z",
+    "referenceNo": "14260031",
+    "externalRef": "2-MMJBC7A-8",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 4486.78,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000079",
+    "account": "00000079",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 800,
+    "filledQuantity": 359,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-14T01:26:14.527Z",
+    "expirationDateTime": "2023-01-14T01:26:14.527Z",
+    "referenceNo": "60223747",
+    "externalRef": "2-S01F5XF-9",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 6203.02,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000080",
+    "account": "00000080",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 800,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 744,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-18T19:27:01.098Z",
+    "expirationDateTime": "2022-12-18T19:27:01.098Z",
+    "referenceNo": "52197003",
+    "externalRef": "2-83MO9VA-0",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5077.06,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000081",
+    "account": "00000081",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "ROYAL BANK OF CANADA",
+    "quantity": 90,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 369,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-13T17:40:48.512Z",
+    "expirationDateTime": "2022-12-13T17:40:48.512Z",
+    "referenceNo": "94079293",
+    "externalRef": "2-7696EUX-1",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 283.28,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000082",
+    "account": "00000082",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 5,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 135,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-15T07:02:47.389Z",
+    "expirationDateTime": "2022-12-15T07:02:47.389Z",
+    "referenceNo": "21822474",
+    "externalRef": "2-JSEJUW6-2",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5.76,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000083",
+    "account": "00000083",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 60,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 744,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-18T13:18:21.864Z",
+    "expirationDateTime": "2023-01-18T13:18:21.864Z",
+    "referenceNo": "45670899",
+    "externalRef": "2-SP4NRP2-3",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 380.78,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000084",
+    "account": "00000084",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 32,
+    "filledQuantity": 4,
+    "price": {
+      "amount": 526,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-05T01:04:28.254Z",
+    "expirationDateTime": "2023-01-05T01:04:28.254Z",
+    "referenceNo": "99053825",
+    "externalRef": "2-CPWDTXV-4",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 143.58,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000085",
+    "account": "00000085",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 5,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 672,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-30T23:36:54.019Z",
+    "expirationDateTime": "2023-01-30T23:36:54.019Z",
+    "referenceNo": "58997776",
+    "externalRef": "2-EH1SK5L-5",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 28.66,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000086",
+    "account": "00000086",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "ROYAL BANK OF CANADA",
+    "quantity": 1000,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-25T17:14:22.580Z",
+    "expirationDateTime": "2022-12-25T17:14:22.580Z",
+    "referenceNo": "20703893",
+    "externalRef": "2-MAQ85I0-6",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5629.8,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000087",
+    "account": "00000087",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 1000,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-28T00:08:32.553Z",
+    "expirationDateTime": "2023-01-28T00:08:32.553Z",
+    "referenceNo": "34169571",
+    "externalRef": "2-84IYWY7-7",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5629.8,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000088",
+    "account": "00000088",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 32,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 369,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-28T08:51:18.246Z",
+    "expirationDateTime": "2022-12-28T08:51:18.246Z",
+    "referenceNo": "14834793",
+    "externalRef": "2-L8JTAM7-8",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 100.72,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000089",
+    "account": "00000089",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "ROYAL BANK OF CANADA",
+    "quantity": 1000,
+    "filledQuantity": 471,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-26T22:45:46.252Z",
+    "expirationDateTime": "2022-12-26T22:45:46.252Z",
+    "referenceNo": "65368690",
+    "externalRef": "2-PNXO8W7-9",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 7753.77,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000090",
+    "account": "00000090",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 800,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 744,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-02T21:11:18.817Z",
+    "expirationDateTime": "2022-12-02T21:11:18.817Z",
+    "referenceNo": "97136124",
+    "externalRef": "2-BGLY1O8-0",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5077.06,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000091",
+    "account": "00000091",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "ROYAL BANK OF CANADA",
+    "quantity": 32,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 672,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-31T18:52:51.524Z",
+    "expirationDateTime": "2022-12-31T18:52:51.524Z",
+    "referenceNo": "50465328",
+    "externalRef": "2-DJ0LEJ2-1",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 183.43,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000092",
+    "account": "00000092",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 11,
+    "filledQuantity": 2,
+    "price": {
+      "amount": 744,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-05T00:51:03.471Z",
+    "expirationDateTime": "2023-01-05T00:51:03.471Z",
+    "referenceNo": "90745210",
+    "externalRef": "2-BV39ASE-2",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 69.81,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000093",
+    "account": "00000093",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 1000,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-17T10:48:32.757Z",
+    "expirationDateTime": "2023-01-17T10:48:32.757Z",
+    "referenceNo": "34011445",
+    "externalRef": "2-FK82KFW-3",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5629.8,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000094",
+    "account": "00000094",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 60,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-06T01:46:06.474Z",
+    "expirationDateTime": "2023-01-06T01:46:06.474Z",
+    "referenceNo": "33372153",
+    "externalRef": "2-DECEV10-4",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 465.23,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000095",
+    "account": "00000095",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 32,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 526,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-29T06:23:06.267Z",
+    "expirationDateTime": "2022-12-29T06:23:06.267Z",
+    "referenceNo": "83621847",
+    "externalRef": "2-OOEBSGF-5",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 143.58,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000096",
+    "account": "00000096",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 5,
+    "filledQuantity": 1,
+    "price": {
+      "amount": 526,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-08T01:11:55.067Z",
+    "expirationDateTime": "2022-12-08T01:11:55.067Z",
+    "referenceNo": "67265704",
+    "externalRef": "2-JZXJHSA-6",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 22.43,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000097",
+    "account": "00000097",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 32,
+    "filledQuantity": 1,
+    "price": {
+      "amount": 526,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-12T03:40:17.734Z",
+    "expirationDateTime": "2023-01-12T03:40:17.734Z",
+    "referenceNo": "59254714",
+    "externalRef": "2-GVYAO7E-7",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 143.58,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000098",
+    "account": "00000098",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 1000,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 672,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-13T04:25:11.445Z",
+    "expirationDateTime": "2022-12-13T04:25:11.445Z",
+    "referenceNo": "55411745",
+    "externalRef": "2-NYH0KTL-8",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5732.16,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000099",
+    "account": "00000099",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 32,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 526,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-27T05:39:31.509Z",
+    "expirationDateTime": "2023-01-27T05:39:31.509Z",
+    "referenceNo": "55345223",
+    "externalRef": "2-F2EM6NE-9",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 143.58,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000100",
+    "account": "00000100",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 60,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-21T05:52:25.624Z",
+    "expirationDateTime": "2022-12-21T05:52:25.624Z",
+    "referenceNo": "57467512",
+    "externalRef": "2-0T6JL84-0",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 465.23,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000101",
+    "account": "00000101",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 5,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 135,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-04T02:37:38.990Z",
+    "expirationDateTime": "2023-01-04T02:37:38.990Z",
+    "referenceNo": "18878369",
+    "externalRef": "2-G498002-1",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5.76,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000102",
+    "account": "00000102",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 11,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 744,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-08T00:40:23.383Z",
+    "expirationDateTime": "2023-01-08T00:40:23.383Z",
+    "referenceNo": "34450560",
+    "externalRef": "2-PSW2WEZ-2",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 69.81,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000103",
+    "account": "00000103",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 60,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 369,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-23T17:16:05.840Z",
+    "expirationDateTime": "2022-12-23T17:16:05.840Z",
+    "referenceNo": "70267703",
+    "externalRef": "2-33HOUR5-3",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 188.85,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000104",
+    "account": "00000104",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 11,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 744,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-25T05:39:43.519Z",
+    "expirationDateTime": "2023-01-25T05:39:43.519Z",
+    "referenceNo": "81239719",
+    "externalRef": "2-3LTDYP7-4",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 69.81,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000105",
+    "account": "00000105",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 11,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-26T01:12:04.047Z",
+    "expirationDateTime": "2022-12-26T01:12:04.047Z",
+    "referenceNo": "18481190",
+    "externalRef": "2-S0QAMDM-5",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 85.29,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000106",
+    "account": "00000106",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 1000,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-18T21:34:41.859Z",
+    "expirationDateTime": "2023-01-18T21:34:41.859Z",
+    "referenceNo": "63325464",
+    "externalRef": "2-LRS6D20-6",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5629.8,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000107",
+    "account": "00000107",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 32,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 744,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-15T05:05:24.440Z",
+    "expirationDateTime": "2022-12-15T05:05:24.440Z",
+    "referenceNo": "71883398",
+    "externalRef": "2-HB0GTJ7-7",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 203.08,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000108",
+    "account": "00000108",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "ROYAL BANK OF CANADA",
+    "quantity": 5,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 744,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-14T01:29:45.791Z",
+    "expirationDateTime": "2023-01-14T01:29:45.791Z",
+    "referenceNo": "95237584",
+    "externalRef": "2-AEYFDYP-8",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 31.73,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000109",
+    "account": "00000109",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 5,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 526,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-25T16:53:36.648Z",
+    "expirationDateTime": "2023-01-25T16:53:36.648Z",
+    "referenceNo": "50130606",
+    "externalRef": "2-KJEQ2D6-9",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 22.43,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000110",
+    "account": "00000110",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "BANK OF MONTREAL",
+    "quantity": 1000,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-18T06:39:20.561Z",
+    "expirationDateTime": "2023-01-18T06:39:20.561Z",
+    "referenceNo": "63504308",
+    "externalRef": "2-VVG4MZH-0",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5629.8,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000111",
+    "account": "00000111",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 11,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 744,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-16T14:12:41.334Z",
+    "expirationDateTime": "2023-01-16T14:12:41.334Z",
+    "referenceNo": "35426481",
+    "externalRef": "2-GK8WLIW-1",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 69.81,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000112",
+    "account": "00000112",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 1000,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-03T10:12:09.579Z",
+    "expirationDateTime": "2022-12-03T10:12:09.579Z",
+    "referenceNo": "80048769",
+    "externalRef": "2-4YXJZWW-2",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 7753.77,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000113",
+    "account": "00000113",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 800,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 369,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-15T06:01:34.021Z",
+    "expirationDateTime": "2022-12-15T06:01:34.021Z",
+    "referenceNo": "84543336",
+    "externalRef": "2-EJV2A73-3",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 2518.06,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000114",
+    "account": "00000114",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "ROYAL BANK OF CANADA",
+    "quantity": 800,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 909,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-10T06:21:25.644Z",
+    "expirationDateTime": "2023-01-10T06:21:25.644Z",
+    "referenceNo": "67001644",
+    "externalRef": "2-2PA3L90-4",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 6203.02,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000115",
+    "account": "00000115",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 60,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 672,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-08T02:47:48.304Z",
+    "expirationDateTime": "2023-01-08T02:47:48.304Z",
+    "referenceNo": "27262385",
+    "externalRef": "2-RFQAZJ6-5",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 343.93,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000116",
+    "account": "00000116",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "TORONTO-DOMINION BANK",
+    "quantity": 1000,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 526,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-09T06:49:28.219Z",
+    "expirationDateTime": "2022-12-09T06:49:28.219Z",
+    "referenceNo": "33865202",
+    "externalRef": "2-TH4F6CW-6",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 4486.78,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000117",
+    "account": "00000117",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 5,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 135,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-31T04:54:11.152Z",
+    "expirationDateTime": "2022-12-31T04:54:11.152Z",
+    "referenceNo": "27540012",
+    "externalRef": "2-X49F6IM-7",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5.76,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000118",
+    "account": "00000118",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "CANADIAN NATIONAL RAIL",
+    "quantity": 32,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 660,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-24T14:11:12.737Z",
+    "expirationDateTime": "2023-01-24T14:11:12.737Z",
+    "referenceNo": "36136411",
+    "externalRef": "2-7NJ54XE-8",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 180.15,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000119",
+    "account": "00000119",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 800,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 672,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-17T18:24:18.056Z",
+    "expirationDateTime": "2022-12-17T18:24:18.056Z",
+    "referenceNo": "10806923",
+    "externalRef": "2-LPZX2ZV-9",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 4585.73,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000120",
+    "account": "00000120",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "ROYAL BANK OF CANADA",
+    "quantity": 90,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 672,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2022-12-28T03:14:40.592Z",
+    "expirationDateTime": "2022-12-28T03:14:40.592Z",
+    "referenceNo": "65270080",
+    "externalRef": "2-R1L0PU7-0",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 515.89,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000121",
+    "account": "00000121",
+    "operation": "BUY",
+    "symbol": null,
+    "description": "ROYAL BANK OF CANADA",
+    "quantity": 800,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 744,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-23T08:50:45.593Z",
+    "expirationDateTime": "2023-01-23T08:50:45.593Z",
+    "referenceNo": "96324348",
+    "externalRef": "2-21HZ1TK-1",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 5077.06,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  },
+  {
+    "id": "ord-00000122",
+    "account": "00000122",
+    "operation": "SELL",
+    "symbol": null,
+    "description": "NATIONAL BANK OF CDA",
+    "quantity": 5,
+    "filledQuantity": 0,
+    "price": {
+      "amount": 672,
+      "currency": "USD"
+    },
+    "status": "WAITING",
+    "orderDateTime": "2023-01-28T03:18:51.017Z",
+    "expirationDateTime": "2023-01-28T03:18:51.017Z",
+    "referenceNo": "47870711",
+    "externalRef": "2-WG1HR1O-2",
+    "detail": {
+      "clientName": "FIRST-NAME LAST-NAME",
+      "accountLabel": "10103ZA - US Margin",
+      "netAmount": {
+        "amount": 28.66,
+        "currency": "USD"
+      },
+      "exchangeRate": 1.3357,
+      "outstandingLimit": 140,
+      "referenceNumber": "1234567890",
+      "telephone": "000-000-0000",
+      "userId": "12344321",
+      "warnings": [
+        "To trade this security in this account, a currency conversion will be made at the current rate.",
+        "A similar order has already been submitted.",
+        "Your transaction will be processed the following business day.",
+        "It is not possible to calculate the buying power of this order.",
+        "A cancellation will not be possible during business hours on market orders. You can call a representative for more information.",
+        "For the above-mentioned reason(s), your order will be processed by one of our representatives."
+      ]
+    }
+  }
+]
