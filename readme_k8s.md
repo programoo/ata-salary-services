@@ -189,14 +189,15 @@ kubectl rollout undo deployment/salary-app
 
 | Task | Command |
 |------|---------|
-| List pods | `kubectl get pods -l app=salary-app -o wide` |
-| Logs of one pod | `kubectl logs <pod-name>` |
-| Follow logs of all pods | `kubectl logs -f -l app=salary-app --prefix` |
-| Pod details and events | `kubectl describe pod <pod-name>` |
-| Shell inside a pod | `kubectl exec -it <pod-name> -- sh` |
-| Scale replicas | `kubectl scale deployment/salary-app --replicas=2` |
-| Restart all pods | `kubectl rollout restart deployment/salary-app` |
-| Kubernetes dashboard | `minikube dashboard` |
+| List pods 					| `kubectl get pods -l app=salary-app -o wide` |
+| List pods with IMAGES column 	| `kubectl get rs -l app=salary-app -o wide` |
+| Logs of one pod 				| `kubectl logs <pod-name>` |
+| Follow logs of all pods 		| `kubectl logs -f -l app=salary-app --prefix` |
+| Pod details and events 		| `kubectl describe pod <pod-name>` |
+| Shell inside a pod 			| `kubectl exec -it <pod-name> -- sh` |
+| Scale replicas 				| `kubectl scale deployment/salary-app --replicas=2` |
+| Restart all pods 				| `kubectl rollout restart deployment/salary-app` |
+| Kubernetes dashboard 			| `minikube dashboard` |
 
 `kubectl scale` changes only the live cluster; the next `kubectl apply -f k8s/`
 sets it back to the `replicas` value in the YAML.
