@@ -27,7 +27,10 @@ spec:
           command: ["sh", "-c", "until pg_isready; do echo waiting for postgres; sleep 2; done"]
           env:
             - name: PGHOST
-              value: postgres
+              valueFrom:
+                configMapKeyRef:
+                  name: salary-app-config
+                  key: DB_HOST
             - name: PGUSER
               valueFrom:
                 secretKeyRef:
@@ -38,9 +41,10 @@ spec:
           # keep in sync with k8s/deployment.yaml
           image: ata-salary-services:1.6
           imagePullPolicy: IfNotPresent
+          envFrom:
+            - configMapRef:
+                name: salary-app-config
           env:
-            - name: SPRING_PROFILES_ACTIVE
-              value: postgres
             # no web server: the app runs the data loaders and exits
             - name: SPRING_MAIN_WEB_APPLICATION_TYPE
               value: none
@@ -48,8 +52,6 @@ spec:
               value: update
             - name: APP_DATA_IMPORT_ENABLED
               value: "true"
-            - name: DB_HOST
-              value: postgres
             - name: DB_NAME
               valueFrom:
                 secretKeyRef:

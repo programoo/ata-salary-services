@@ -1,0 +1,21 @@
+# Non-secret settings shared by the salary-app Deployment and the salary-seed Job.
+# Passwords belong in the Secret "postgres" (k8s/postgres.yaml), not here.
+#
+# Pods read these env vars only when they start. After changing a value:
+#   kubectl apply -f k8s/salary-app-config.yaml
+#   kubectl rollout restart deployment/salary-app
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: salary-app-config
+  labels:
+    app: salary-app
+data:
+  # Spring profile -> application-postgres.properties
+  SPRING_PROFILES_ACTIVE: postgres
+  # Service name of the database (headless Service in k8s/postgres.yaml)
+  DB_HOST: postgres
+  # ConfigMap values are always strings, so numbers must be quoted
+  DB_PORT: "5432"
+  # Browser origins allowed to call /api/** (comma-separated) -> app.cors.allowed-origins
+  APP_CORS_ALLOWED_ORIGINS: http://localhost:5173

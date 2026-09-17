@@ -10,6 +10,7 @@ manifests in [`k8s/`](k8s/).
 | [`k8s/service.yaml`](k8s/service.yaml) | Service `salary-app` of type `NodePort`: port 80 inside the cluster, node port `30080` |
 | [`k8s/postgres.yaml`](k8s/postgres.yaml) | Secret `postgres` (DB name, user, password), headless Service `postgres`, and StatefulSet `postgres` (1 replica of `postgres:16-alpine`) with a 1Gi PersistentVolumeClaim |
 | [`k8s/seed-job.yaml`](k8s/seed-job.yaml) | Job `salary-seed`: runs the app image once to create the tables and import the seed data, then exits |
+| [`k8s/salary-app-config.yaml`](k8s/salary-app-config.yaml) | ConfigMap `salary-app-config`: non-secret settings (Spring profile, DB host/port, CORS origins) shared by the Deployment and the Job. See [readme_configmap_k8s.md](readme_configmap_k8s.md). |
 
 How the pieces fit together:
 
@@ -436,10 +437,12 @@ minikube delete
   `minikube delete`.
 - **Health probes use `GET /`.** A pod is only added to the Service once `/`
   returns `200`. Liveness failures restart the container.
-- **CORS** allows only `http://localhost:5173` by default. To allow another
-  origin, set an env var on the container, for example
-  `APP_CORS_ALLOWED_ORIGINS=http://localhost:3000` (Spring maps it to
-  `app.cors.allowed-origins`).
+- **CORS** allows only `http://localhost:5173`. To allow another origin,
+  change `APP_CORS_ALLOWED_ORIGINS` in
+  [`k8s/salary-app-config.yaml`](k8s/salary-app-config.yaml) (Spring maps it
+  to `app.cors.allowed-origins`), apply it, and run
+  `kubectl rollout restart deployment/salary-app`. The step-by-step exercise
+  is in [readme_configmap_k8s.md](readme_configmap_k8s.md).
 
 ## Troubleshooting
 

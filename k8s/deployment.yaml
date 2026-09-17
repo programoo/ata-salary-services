@@ -28,8 +28,12 @@ spec:
                 echo waiting for salary-seed job; sleep 3
               done
           env:
+            # a single key from the ConfigMap, renamed to what psql expects
             - name: PGHOST
-              value: postgres
+              valueFrom:
+                configMapKeyRef:
+                  name: salary-app-config
+                  key: DB_HOST
             - name: PGDATABASE
               valueFrom:
                 secretKeyRef:
@@ -51,16 +55,17 @@ spec:
           image: ata-salary-services:1.6
           # image lives only in the cluster's local store, never pull it
           imagePullPolicy: IfNotPresent
+          # every key in the ConfigMap becomes an env var with the same name
+          envFrom:
+            - configMapRef:
+                name: salary-app-config
+          # settings specific to this workload; an entry here overrides the same name from envFrom
           env:
-            - name: SPRING_PROFILES_ACTIVE
-              value: postgres
             # the seed Job owns the schema and data; app pods only check the schema matches
             - name: SPRING_JPA_HIBERNATE_DDL_AUTO
               value: validate
             - name: APP_DATA_IMPORT_ENABLED
               value: "false"
-            - name: DB_HOST
-              value: postgres
             - name: DB_NAME
               valueFrom:
                 secretKeyRef:

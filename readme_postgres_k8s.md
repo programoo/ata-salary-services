@@ -45,9 +45,15 @@ Don't edit these files directly. Always go through Postgres.
 ## How the app connects to the database
 
 The Deployment tells the app **where and how** to connect, but it doesn't
-make the connection itself. Four pieces work together:
+make the connection itself. Five pieces work together:
 
 ```
+ ConfigMap "salary-app-config"
+ ─────────────────────────────
+ SPRING_PROFILES_ACTIVE ──┐
+ DB_HOST = postgres     ──┤
+ DB_PORT = 5432         ──┤ envFrom
+                          ▼
  Secret "postgres"            Deployment "salary-app"              Service "postgres"          Pod postgres-0
  ─────────────────            ───────────────────────              ──────────────────          ──────────────
  POSTGRES_DB       ──────►    env DB_NAME                          DNS name "postgres"  ────►  Postgres on :5432
@@ -64,8 +70,9 @@ make the connection itself. Four pieces work together:
 
 | Piece | What it does | What it doesn't do |
 |-------|--------------|--------------------|
+| **ConfigMap** `salary-app-config` ([`k8s/salary-app-config.yaml`](k8s/salary-app-config.yaml)) | Stores the non-secret settings: the `postgres` profile, `DB_HOST`, `DB_PORT`, CORS origins. See [readme_configmap_k8s.md](readme_configmap_k8s.md). | Update running pods when changed (restart them) |
 | **Secret** `postgres` ([`k8s/postgres.yaml`](k8s/postgres.yaml)) | Stores the database name, user and password once. Both Postgres and the app read them from here. | Encrypt anything (values are only base64-encoded) |
-| **Deployment** `salary-app` ([`k8s/deployment.yaml`](k8s/deployment.yaml)) | Turns on the `postgres` profile, sets `DB_HOST=postgres`, copies the Secret values into env vars, and waits for data before starting the app | Open or manage connections |
+| **Deployment** `salary-app` ([`k8s/deployment.yaml`](k8s/deployment.yaml)) | Loads the ConfigMap and Secret values into env vars, and waits for data before starting the app | Open or manage connections |
 | **Service** `postgres` ([`k8s/postgres.yaml`](k8s/postgres.yaml)) | Gives the database a stable DNS name, `postgres`, that points to whatever IP `postgres-0` currently has | Load balance: it's headless (`clusterIP: None`), so the name resolves straight to the pod IP |
 | **The app** ([`application-postgres.properties`](src/main/resources/application-postgres.properties)) | Builds the JDBC URL from the env vars, opens the connections, and reconnects if Postgres restarts | Know it's running in Kubernetes: it only sees env vars and a hostname |
 
