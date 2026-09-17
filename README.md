@@ -7,7 +7,8 @@ No create/update/delete endpoints - get and filter only.
 
 - Java 21, Spring Boot 3.5.16, Maven
 - Spring Data JPA + Hibernate community dialect
-- SQLite (file-based, `data/salary.db`)
+- SQLite (file-based, `data/salary.db`) by default
+- PostgreSQL with the `postgres` profile, used on Kubernetes (see [readme_k8s.md](readme_k8s.md))
 
 ## Running
 

@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
 
@@ -20,6 +21,7 @@ import java.util.List;
  * are copied as-is from the source JSON - no parsing or normalization.
  */
 @Component
+@ConditionalOnProperty(name = "app.data.import-enabled", havingValue = "true", matchIfMissing = true)
 public class SalaryDataLoader implements CommandLineRunner {
 
     private static final Logger log = LoggerFactory.getLogger(SalaryDataLoader.class);

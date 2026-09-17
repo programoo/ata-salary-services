@@ -1,0 +1,95 @@
+# PostgreSQL for salary-app: Secret + headless Service + single-replica StatefulSet.
+# The data directory lives on a PersistentVolumeClaim (data-postgres-0), so it
+# survives pod restarts, redeploys and `minikube stop`. It is NOT removed by
+# `kubectl delete -f k8s/`; delete the PVC explicitly to wipe the database.
+apiVersion: v1
+kind: Secret
+metadata:
+  name: postgres
+  labels:
+    app: postgres
+type: Opaque
+stringData:
+  # Local-development credentials only. Never commit real passwords.
+  POSTGRES_DB: salary
+  POSTGRES_USER: salary
+  POSTGRES_PASSWORD: salary-dev-password
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres
+  labels:
+    app: postgres
+spec:
+  # Headless: DNS name "postgres" resolves straight to the pod IP, and the pod
+  # also gets a stable name "postgres-0.postgres".
+  clusterIP: None
+  selector:
+    app: postgres
+  ports:
+    - name: postgres
+      port: 5432
+      targetPort: postgres
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: postgres
+  labels:
+    app: postgres
+spec:
+  serviceName: postgres
+  # A plain Postgres cannot share its data directory, so keep this at 1.
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres
+  template:
+    metadata:
+      labels:
+        app: postgres
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:16-alpine
+          ports:
+            - name: postgres
+              containerPort: 5432
+          envFrom:
+            - secretRef:
+                name: postgres
+          env:
+            # subdirectory of the mount, so initdb never sees a non-empty dir
+            - name: PGDATA
+              value: /var/lib/postgresql/data/pgdata
+          volumeMounts:
+            - name: data
+              mountPath: /var/lib/postgresql/data
+          readinessProbe:
+            exec:
+              command: ["sh", "-c", "pg_isready -U \"$POSTGRES_USER\" -d \"$POSTGRES_DB\""]
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          livenessProbe:
+            exec:
+              command: ["sh", "-c", "pg_isready -U \"$POSTGRES_USER\" -d \"$POSTGRES_DB\""]
+            initialDelaySeconds: 30
+            periodSeconds: 15
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
+  # One PVC per replica, named <template>-<pod>: data-postgres-0.
+  # No storageClassName, so minikube's default "standard" class provisions it.
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: 1Gi

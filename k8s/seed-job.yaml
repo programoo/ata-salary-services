@@ -1,0 +1,74 @@
+# One-off Job that creates the tables and imports the seed data, then exits.
+# Running it once here (instead of in every app replica) avoids 5 pods racing
+# to create the schema and insert the same rows.
+#
+# A Job's pod template can't be changed after creation. To run it again (e.g.
+# after changing an entity or the image tag):
+#   kubectl delete job salary-seed
+#   kubectl apply -f k8s/seed-job.yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: salary-seed
+  labels:
+    app: salary-seed
+spec:
+  backoffLimit: 4
+  template:
+    metadata:
+      labels:
+        app: salary-seed
+    spec:
+      restartPolicy: Never
+      initContainers:
+        # Hold the Job until Postgres accepts connections.
+        - name: wait-for-postgres
+          image: postgres:16-alpine
+          command: ["sh", "-c", "until pg_isready; do echo waiting for postgres; sleep 2; done"]
+          env:
+            - name: PGHOST
+              value: postgres
+            - name: PGUSER
+              valueFrom:
+                secretKeyRef:
+                  name: postgres
+                  key: POSTGRES_USER
+      containers:
+        - name: seed
+          # keep in sync with k8s/deployment.yaml
+          image: ata-salary-services:1.6
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: postgres
+            # no web server: the app runs the data loaders and exits
+            - name: SPRING_MAIN_WEB_APPLICATION_TYPE
+              value: none
+            - name: SPRING_JPA_HIBERNATE_DDL_AUTO
+              value: update
+            - name: APP_DATA_IMPORT_ENABLED
+              value: "true"
+            - name: DB_HOST
+              value: postgres
+            - name: DB_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: postgres
+                  key: POSTGRES_DB
+            - name: DB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: postgres
+                  key: POSTGRES_USER
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres
+                  key: POSTGRES_PASSWORD
+          resources:
+            requests:
+              cpu: 200m
+              memory: 384Mi
+            limits:
+              cpu: "1"
+              memory: 768Mi

@@ -14,11 +14,68 @@ spec:
       labels:
         app: salary-app
     spec:
+      initContainers:
+        # Hold the pod until the salary-seed Job has created and filled both
+        # tables; otherwise schema validation below fails on an empty database.
+        - name: wait-for-seed
+          image: postgres:16-alpine
+          command:
+            - sh
+            - -c
+            - |
+              until psql -tAc "SELECT 1 FROM salary_records LIMIT 1" 2>/dev/null | grep -q 1 \
+                 && psql -tAc "SELECT 1 FROM orders LIMIT 1" 2>/dev/null | grep -q 1; do
+                echo waiting for salary-seed job; sleep 3
+              done
+          env:
+            - name: PGHOST
+              value: postgres
+            - name: PGDATABASE
+              valueFrom:
+                secretKeyRef:
+                  name: postgres
+                  key: POSTGRES_DB
+            - name: PGUSER
+              valueFrom:
+                secretKeyRef:
+                  name: postgres
+                  key: POSTGRES_USER
+            - name: PGPASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres
+                  key: POSTGRES_PASSWORD
       containers:
         - name: salary-app
-          image: ata-salary-services:1.5
+          # keep in sync with k8s/seed-job.yaml
+          image: ata-salary-services:1.6
           # image lives only in the cluster's local store, never pull it
           imagePullPolicy: IfNotPresent
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: postgres
+            # the seed Job owns the schema and data; app pods only check the schema matches
+            - name: SPRING_JPA_HIBERNATE_DDL_AUTO
+              value: validate
+            - name: APP_DATA_IMPORT_ENABLED
+              value: "false"
+            - name: DB_HOST
+              value: postgres
+            - name: DB_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: postgres
+                  key: POSTGRES_DB
+            - name: DB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: postgres
+                  key: POSTGRES_USER
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres
+                  key: POSTGRES_PASSWORD
           ports:
             - name: http
               containerPort: 8080

@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
 
@@ -20,6 +21,7 @@ import java.util.List;
  * On startup, imports the order seed dataset into the database exactly once.
  */
 @Component
+@ConditionalOnProperty(name = "app.data.import-enabled", havingValue = "true", matchIfMissing = true)
 public class OrderDataLoader implements CommandLineRunner {
 
     private static final Logger log = LoggerFactory.getLogger(OrderDataLoader.class);
