@@ -10,11 +10,11 @@ The kubelet (the agent on each node) calls these HTTP endpoints on every pod,
 over and over. Each probe asks a different question and has a different
 consequence when it fails:
 
-| Probe | Question | When it fails | Endpoint |
-|---|---|---|---|
-| **startup** | Has the app finished starting? | Keeps waiting. After `failureThreshold` failures the container is restarted | `/actuator/health/liveness` |
-| **readiness** | Should this pod get traffic right now? | Pod is **removed from the Service**. It keeps running and isn't restarted | `/actuator/health/readiness` |
-| **liveness** | Is the process stuck beyond repair? | Container is **restarted** | `/actuator/health/liveness` |
+| Probe         | Question                               | When it fails                                                               | Endpoint                     |
+|---------------|----------------------------------------|-----------------------------------------------------------------------------|------------------------------|
+| **startup**   | Has the app finished starting?         | Keeps waiting. After `failureThreshold` failures the container is restarted | `/actuator/health/liveness`  |
+| **readiness** | Should this pod get traffic right now? | Pod is **removed from the Service**. It keeps running and isn't restarted   | `/actuator/health/readiness` |
+| **liveness**  | Is the process stuck beyond repair?    | Container is **restarted**                                                  | `/actuator/health/liveness`  |
 
 The key difference: **readiness failing is harmless and reversible, while liveness
 failing kills the container.** Most probe bugs come from mixing them up.
@@ -35,12 +35,12 @@ Before, both probes called `GET /`, which only proved Tomcat could answer.
 Now they use Spring Boot Actuator (`spring-boot-starter-actuator` in
 [`pom.xml`](pom.xml)), which ties the answers to the app's real state:
 
-| | Old | New |
-|---|---|---|
-| Readiness | `GET /` | `/actuator/health/readiness`: `UP` only after startup has fully finished **and** the database answers |
-| Liveness | `GET /` | `/actuator/health/liveness`: `UP` unless the app declared itself broken |
-| Slow start | `initialDelaySeconds: 30` on liveness (a guess) | A `startupProbe` that allows up to 150s, then hands over |
-| Shutdown | Nothing | Spring switches readiness to `OUT_OF_SERVICE` as soon as the pod starts shutting down, so it stops getting traffic before it exits |
+|            | Old                                             | New                                                                                                                                |
+|------------|-------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| Readiness  | `GET /`                                         | `/actuator/health/readiness`: `UP` only after startup has fully finished **and** the database answers                              |
+| Liveness   | `GET /`                                         | `/actuator/health/liveness`: `UP` unless the app declared itself broken                                                            |
+| Slow start | `initialDelaySeconds: 30` on liveness (a guess) | A `startupProbe` that allows up to 150s, then hands over                                                                           |
+| Shutdown   | Nothing                                         | Spring switches readiness to `OUT_OF_SERVICE` as soon as the pod starts shutting down, so it stops getting traffic before it exits |
 
 The settings are in
 [`application.properties`](src/main/resources/application.properties):
@@ -174,11 +174,11 @@ To let you fail a probe on purpose, the Deployment sets
 `APP_PROBE_DEMO_ENABLED=true`, which turns on
 [`ProbeDemoController`](src/main/java/com/ata/salaryservices/controller/ProbeDemoController.java):
 
-| Call | Effect on that one pod |
-|---|---|
-| `POST /demo/probes/readiness/refuse` | Readiness returns `503 OUT_OF_SERVICE` |
-| `POST /demo/probes/readiness/accept` | Readiness returns `200 UP` again |
-| `POST /demo/probes/liveness/break` | Liveness returns `503 DOWN` (no undo, which is what liveness is for) |
+| Call                                 | Effect on that one pod                                               |
+|--------------------------------------|----------------------------------------------------------------------|
+| `POST /demo/probes/readiness/refuse` | Readiness returns `503 OUT_OF_SERVICE`                               |
+| `POST /demo/probes/readiness/accept` | Readiness returns `200 UP` again                                     |
+| `POST /demo/probes/liveness/break`   | Liveness returns `503 DOWN` (no undo, which is what liveness is for) |
 
 These only affect the pod that receives the call, so talk to **one pod
 directly**, not the Service (which would pick a random pod). Port-forwarding
@@ -391,14 +391,14 @@ curl http://localhost:8080/actuator/health/liveness
 
 ## Common probe mistakes
 
-| Mistake | What happens |
-|---|---|
-| External dependency (DB, other service) in liveness | Outage elsewhere → all your pods restart in a loop |
-| Liveness without a startup probe and too little `initialDelaySeconds` | Slow JVM start gets killed before it's up → `CrashLoopBackOff` forever |
-| Readiness and liveness on the same endpoint | Can't take a pod out of rotation without also restarting it |
-| Default `timeoutSeconds: 1` with a slow check | A briefly slow response counts as a failure → pods flicker unready or restart under load |
-| Probe endpoint doing heavy work | Probes run every few seconds on every pod, so they add real load |
-| No readiness probe at all | New pods get traffic before Spring has started → errors during every rollout |
+| Mistake                                                               | What happens                                                                             |
+|-----------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| External dependency (DB, other service) in liveness                   | Outage elsewhere → all your pods restart in a loop                                       |
+| Liveness without a startup probe and too little `initialDelaySeconds` | Slow JVM start gets killed before it's up → `CrashLoopBackOff` forever                   |
+| Readiness and liveness on the same endpoint                           | Can't take a pod out of rotation without also restarting it                              |
+| Default `timeoutSeconds: 1` with a slow check                         | A briefly slow response counts as a failure → pods flicker unready or restart under load |
+| Probe endpoint doing heavy work                                       | Probes run every few seconds on every pod, so they add real load                         |
+| No readiness probe at all                                             | New pods get traffic before Spring has started → errors during every rollout             |
 
 ## Readiness makes rollouts safe
 
@@ -412,26 +412,26 @@ deployment/salary-app` recovers. The next topic,
 
 ## Quick reference
 
-| Task | Command |
-|---|---|
-| Show probe settings | `kubectl describe deployment salary-app` |
-| Why is a pod unready / restarting? | `kubectl describe pod <pod-name>` (Events at the bottom) |
-| Which pods get Service traffic | `kubectl get endpointslices -l kubernetes.io/service-name=salary-app` |
-| Watch READY and RESTARTS change | `kubectl get pods -l app=salary-app -w` |
-| Logs before the last restart | `kubectl logs <pod-name> --previous` |
-| Call one pod directly | `kubectl port-forward pod/<pod-name> 8081:8080` |
-| Check probe endpoints | `curl http://localhost:8080/actuator/health/readiness` |
+| Task                               | Command                                                               |
+|------------------------------------|-----------------------------------------------------------------------|
+| Show probe settings                | `kubectl describe deployment salary-app`                              |
+| Why is a pod unready / restarting? | `kubectl describe pod <pod-name>` (Events at the bottom)              |
+| Which pods get Service traffic     | `kubectl get endpointslices -l kubernetes.io/service-name=salary-app` |
+| Watch READY and RESTARTS change    | `kubectl get pods -l app=salary-app -w`                               |
+| Logs before the last restart       | `kubectl logs <pod-name> --previous`                                  |
+| Call one pod directly              | `kubectl port-forward pod/<pod-name> 8081:8080`                       |
+| Check probe endpoints              | `curl http://localhost:8080/actuator/health/readiness`                |
 
 ## Troubleshooting
 
-| Symptom | Likely cause and fix |
-|---|---|
-| `404` on `/actuator/health/...` | The running image is older than `1.7`. Check `kubectl get deployment salary-app -o wide` and rebuild/load the image. |
-| `404` on `/demo/probes/...` | `APP_PROBE_DEMO_ENABLED` isn't `"true"` in the Deployment, or the image is old. |
-| All pods `0/1`, no restarts | Readiness failing everywhere, usually the database. `curl .../actuator/health/readiness` on one pod shows which component is `DOWN`. |
-| `RESTARTS` keeps climbing | Liveness or startup failing. `kubectl describe pod` shows which; `kubectl logs --previous` shows why. |
-| Pod restarted during startup | Startup took longer than 150s. Raise `startupProbe.failureThreshold`, or the CPU limit (JVM startup is CPU-heavy). |
-| Probe events say `context deadline exceeded` | The check took longer than `timeoutSeconds`. Look at what's slow (often the DB check). |
+| Symptom                                      | Likely cause and fix                                                                                                                 |
+|----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| `404` on `/actuator/health/...`              | The running image is older than `1.7`. Check `kubectl get deployment salary-app -o wide` and rebuild/load the image.                 |
+| `404` on `/demo/probes/...`                  | `APP_PROBE_DEMO_ENABLED` isn't `"true"` in the Deployment, or the image is old.                                                      |
+| All pods `0/1`, no restarts                  | Readiness failing everywhere, usually the database. `curl .../actuator/health/readiness` on one pod shows which component is `DOWN`. |
+| `RESTARTS` keeps climbing                    | Liveness or startup failing. `kubectl describe pod` shows which; `kubectl logs --previous` shows why.                                |
+| Pod restarted during startup                 | Startup took longer than 150s. Raise `startupProbe.failureThreshold`, or the CPU limit (JVM startup is CPU-heavy).                   |
+| Probe events say `context deadline exceeded` | The check took longer than `timeoutSeconds`. Look at what's slow (often the DB check).                                               |
 
 ## Before real production
 
