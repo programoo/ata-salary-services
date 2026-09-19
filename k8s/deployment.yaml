@@ -6,6 +6,12 @@ metadata:
     app: salary-app
 spec:
   replicas: 2
+  # Lesson 2: remove an old pod first, then start its replacement (no extra pods)
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 0
+      maxUnavailable: 1
   selector:
     matchLabels:
       app: salary-app
