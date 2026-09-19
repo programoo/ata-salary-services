@@ -6,12 +6,13 @@ metadata:
     app: salary-app
 spec:
   replicas: 2
-  # Lesson 2: remove an old pod first, then start its replacement (no extra pods)
+  # Rolling update: start 1 extra new pod, remove an old pod only after the new
+  # one is ready. Capacity never drops, and a broken release can't take pods away.
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxSurge: 0
-      maxUnavailable: 1
+      maxSurge: 1
+      maxUnavailable: 0
   selector:
     matchLabels:
       app: salary-app
