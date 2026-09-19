@@ -6,7 +6,7 @@ manifests in [`k8s/`](k8s/).
 
 | File | What it creates |
 |------|-----------------|
-| [`k8s/deployment.yaml`](k8s/deployment.yaml) | Deployment `salary-app`: 5 replicas of image `ata-salary-services:1.6`, port 8080, readiness/liveness probes on `GET /`. Connects to Postgres. |
+| [`k8s/deployment.yaml`](k8s/deployment.yaml) | Deployment `salary-app`: 5 replicas of image `ata-salary-services:1.7`, port 8080, startup/readiness/liveness probes on `/actuator/health/*` (see [readme_probes_k8s.md](readme_probes_k8s.md)). Connects to Postgres. |
 | [`k8s/service.yaml`](k8s/service.yaml) | Service `salary-app` of type `NodePort`: port 80 inside the cluster, node port `30080` |
 | [`k8s/postgres.yaml`](k8s/postgres.yaml) | Secret `postgres` (DB name, user, password), headless Service `postgres`, and StatefulSet `postgres` (1 replica of `postgres:16-alpine`) with a 1Gi PersistentVolumeClaim |
 | [`k8s/seed-job.yaml`](k8s/seed-job.yaml) | Job `salary-seed`: runs the app image once to create the tables and import the seed data, then exits |
@@ -92,7 +92,7 @@ You should see one node named `minikube` with status `Ready`.
 From the project root:
 
 ```bash
-docker build -t ata-salary-services:1.6 .
+docker build -t ata-salary-services:1.7 .
 ```
 
 The [`Dockerfile`](Dockerfile) is multi-stage: Maven builds the jar, then it
@@ -102,7 +102,7 @@ minikube runs its own container runtime, so an image in your local Docker
 is not visible to the cluster until you load it:
 
 ```bash
-minikube image load ata-salary-services:1.6
+minikube image load ata-salary-services:1.7
 ```
 
 Check that it arrived:
@@ -111,7 +111,7 @@ Check that it arrived:
 minikube image ls
 ```
 
-Look for `docker.io/library/ata-salary-services:1.6` in the list.
+Look for `docker.io/library/ata-salary-services:1.7` in the list.
 
 The `postgres:16-alpine` image is pulled from Docker Hub by the cluster
 itself the first time, so you don't need to load it.
@@ -435,8 +435,10 @@ minikube delete
 - **Data survives** pod restarts, redeploys, `kubectl delete -f k8s/` and
   `minikube stop`. It is lost with `kubectl delete pvc data-postgres-0` or
   `minikube delete`.
-- **Health probes use `GET /`.** A pod is only added to the Service once `/`
-  returns `200`. Liveness failures restart the container.
+- **Health probes use Spring Boot Actuator.** A pod is only added to the
+  Service once `/actuator/health/readiness` returns `200`, which also needs a
+  working database connection. Liveness failures restart the container. See
+  [readme_probes_k8s.md](readme_probes_k8s.md).
 - **CORS** allows only `http://localhost:5173`. To allow another origin,
   change `APP_CORS_ALLOWED_ORIGINS` in
   [`k8s/salary-app-config.yaml`](k8s/salary-app-config.yaml) (Spring maps it

@@ -16,5 +16,5 @@ COPY --from=build /build/target/*.jar app.jar
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "/app/app.jar"]
 # build command
-# docker build -t ata-salary-services:1.6 .
-# minikube image load ata-salary-services:1.6
+# docker build -t ata-salary-services:1.7 .
+# minikube image load ata-salary-services:1.7

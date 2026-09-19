@@ -52,7 +52,7 @@ spec:
       containers:
         - name: salary-app
           # keep in sync with k8s/seed-job.yaml
-          image: ata-salary-services:1.6
+          image: ata-salary-services:1.7
           # image lives only in the cluster's local store, never pull it
           imagePullPolicy: IfNotPresent
           # every key in the ConfigMap becomes an env var with the same name
@@ -66,6 +66,9 @@ spec:
               value: validate
             - name: APP_DATA_IMPORT_ENABLED
               value: "false"
+            # learning aid for readme_probes_k8s.md; remove before any real deployment
+            - name: APP_PROBE_DEMO_ENABLED
+              value: "true"
             - name: DB_NAME
               valueFrom:
                 secretKeyRef:
@@ -84,18 +87,35 @@ spec:
           ports:
             - name: http
               containerPort: 8080
+          # Probes are explained in readme_probes_k8s.md. None of them run while
+          # the init container above is still waiting.
+          #
+          # startup: protects a slow-starting JVM. Liveness and readiness don't
+          # start until this passes once; allows up to 30 x 5s = 150s to start.
+          startupProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: http
+            periodSeconds: 5
+            failureThreshold: 30
+          # readiness: "send me traffic?" Failing removes the pod from the Service
+          # (no restart). Includes the database check, see application.properties.
           readinessProbe:
             httpGet:
-              path: /
+              path: /actuator/health/readiness
               port: http
-            initialDelaySeconds: 10
             periodSeconds: 5
+            timeoutSeconds: 3
+            failureThreshold: 3
+          # liveness: "is the process stuck?" Failing 3 times in a row restarts the
+          # container. Never includes the database: a restart can't fix Postgres.
           livenessProbe:
             httpGet:
-              path: /
+              path: /actuator/health/liveness
               port: http
-            initialDelaySeconds: 30
-            periodSeconds: 15
+            periodSeconds: 10
+            timeoutSeconds: 3
+            failureThreshold: 3
           resources:
             requests:
               cpu: 200m
