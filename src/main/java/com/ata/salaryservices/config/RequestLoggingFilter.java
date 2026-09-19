@@ -14,7 +14,6 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import org.springframework.web.util.ContentCachingResponseWrapper;
 
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
 /**
@@ -73,10 +72,8 @@ public class RequestLoggingFilter extends OncePerRequestFilter {
         if (contentType == null || !(contentType.contains("json") || contentType.startsWith("text/"))) {
             return "(" + body.length + " bytes of " + contentType + ")";
         }
-        Charset charset = response.getCharacterEncoding() != null
-                ? Charset.forName(response.getCharacterEncoding())
-                : StandardCharsets.UTF_8;
-        String text = new String(body, charset);
+        // Spring writes JSON as UTF-8; the servlet default (ISO-8859-1) would garble non-ASCII text
+        String text = new String(body, StandardCharsets.UTF_8);
         return text.length() <= maxBodyLength
                 ? text
                 : text.substring(0, maxBodyLength) + "... (" + text.length() + " chars total)";
