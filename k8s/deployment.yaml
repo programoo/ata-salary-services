@@ -5,7 +5,7 @@ metadata:
   labels:
     app: salary-app
 spec:
-  replicas: 5
+  replicas: 2
   selector:
     matchLabels:
       app: salary-app
@@ -52,7 +52,7 @@ spec:
       containers:
         - name: salary-app
           # keep in sync with k8s/seed-job.yaml
-          image: ata-salary-services:1.7
+          image: ata-salary-services:1.9
           # image lives only in the cluster's local store, never pull it
           imagePullPolicy: IfNotPresent
           # every key in the ConfigMap becomes an env var with the same name

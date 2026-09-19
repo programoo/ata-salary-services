@@ -39,7 +39,7 @@ spec:
       containers:
         - name: seed
           # keep in sync with k8s/deployment.yaml
-          image: ata-salary-services:1.7
+          image: ata-salary-services:1.9
           imagePullPolicy: IfNotPresent
           envFrom:
             - configMapRef:

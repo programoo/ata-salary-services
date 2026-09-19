@@ -92,7 +92,7 @@ You should see one node named `minikube` with status `Ready`.
 From the project root:
 
 ```bash
-docker build -t ata-salary-services:1.7 .
+docker build --no-cache -t ata-salary-services:1.9 .
 ```
 
 The [`Dockerfile`](Dockerfile) is multi-stage: Maven builds the jar, then it
