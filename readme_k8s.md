@@ -439,6 +439,9 @@ minikube delete
   Service once `/actuator/health/readiness` returns `200`, which also needs a
   working database connection. Liveness failures restart the container. See
   [readme_probes_k8s.md](readme_probes_k8s.md).
+- **Ingress** gives both apps one entry point, routed by hostname:
+  `salary.localhost` and `orders.localhost`. See
+  [readme_ingress_k8s.md](readme_ingress_k8s.md).
 - **CORS** allows only `http://localhost:5173`. To allow another origin,
   change `APP_CORS_ALLOWED_ORIGINS` in
   [`k8s/salary-app-config.yaml`](k8s/salary-app-config.yaml) (Spring maps it
