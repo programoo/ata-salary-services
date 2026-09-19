@@ -69,11 +69,11 @@ Only three fields are filterable, and their names must be spelled exactly as
 below (unlike `fields` and `sort`, filter names are **not** case- or
 underscore-insensitive - `jobTitle[eq]=...` is silently ignored):
 
-| Filter param | Compared as                          |
-|--------------|--------------------------------------|
-| `job_title`  | full string, case-insensitive        |
-| `gender`     | full string, case-insensitive        |
-| `salary`     | number, parsed from the raw text     |
+| Filter param | Compared as                      |
+|--------------|----------------------------------|
+| `job_title`  | full string, case-insensitive    |
+| `gender`     | full string, case-insensitive    |
+| `salary`     | number, parsed from the raw text |
 
 - String comparisons are whole-string, not substring: `job_title[eq]=engineer`
   matches `"Engineer"` but not `"Software Engineer"`. Use `gt`/`lt` and friends
@@ -212,13 +212,13 @@ curl "http://localhost:8080/api/orders?period=TRANSMISSION&status=WAITING&from=2
 }
 ```
 
-| Param    | Notes |
-|----------|-------|
-| `period` | Optional. Only `TRANSMISSION` exists in MVP-1, so it is validated but does not narrow results. |
-| `status` | Optional. Only `WAITING` exists in MVP-1. |
-| `from`, `to` | Optional `yyyy-MM-dd`, inclusive calendar days in UTC. `from` after `to` returns `400`. |
-| `page`, `size` | 0-indexed page (default `0`), page size (default `20`). |
-| `sort`   | `field,asc|desc`, default `orderDateTime,desc`. Any summary field except `id`. |
+| Param          | Notes                                                                                          |
+|----------------|------------------------------------------------------------------------------------------------|
+| `period`       | Optional. Only `TRANSMISSION` exists in MVP-1, so it is validated but does not narrow results. |
+| `status`       | Optional. Only `WAITING` exists in MVP-1.                                                      |
+| `from`, `to`   | Optional `yyyy-MM-dd`, inclusive calendar days in UTC. `from` after `to` returns `400`.        |
+| `page`, `size` | 0-indexed page (default `0`), page size (default `20`).                                        |
+| `sort`         | `field,asc|desc`, default `orderDateTime,desc`. Any summary field except `id`.                 |
 
 - Filtering, sorting and paging run in the database (unlike `job_data`).
 - `price` sorts by its amount; quantities sort numerically and dates as instants.
@@ -258,13 +258,13 @@ The requests are hard-coded to `localhost:8080`; if you run the app on
 another host or port, edit the URLs (or replace the host with a Postman
 variable) after importing.
 
-| Request | What it shows |
-|---------|---------------|
-| `status` | `GET /` health check |
-| `job_data_filter` | Default `eq` filtering on `job_title`, `salary`, and `gender` |
-| `job_data_filter_operation` | Operator syntax, e.g. `salary[lte]=100000` |
-| `job_data_sparse` | `fields=` sparse fieldsets across every record field |
-| `job_data_sort` | Repeated `sort=` params for a multi-level sort, plus a disabled `fields` param you can re-enable |
+| Request                     | What it shows                                                                                    |
+|-----------------------------|--------------------------------------------------------------------------------------------------|
+| `status`                    | `GET /` health check                                                                             |
+| `job_data_filter`           | Default `eq` filtering on `job_title`, `salary`, and `gender`                                    |
+| `job_data_filter_operation` | Operator syntax, e.g. `salary[lte]=100000`                                                       |
+| `job_data_sparse`           | `fields=` sparse fieldsets across every record field                                             |
+| `job_data_sort`             | Repeated `sort=` params for a multi-level sort, plus a disabled `fields` param you can re-enable |
 
 Note that `job_data_filter_operation` sends an unencoded `salary[lte]` key,
 which the app accepts thanks to `server.tomcat.relaxed-query-chars` (see

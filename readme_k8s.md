@@ -4,30 +4,30 @@ This guide takes you from a stopped machine to the service answering requests
 inside a local [minikube](https://minikube.sigs.k8s.io/) cluster, using the
 manifests in [`k8s/`](k8s/).
 
-| File | What it creates |
-|------|-----------------|
-| [`k8s/deployment.yaml`](k8s/deployment.yaml) | Deployment `salary-app`: 5 replicas of image `ata-salary-services:1.7`, port 8080, startup/readiness/liveness probes on `/actuator/health/*` (see [readme_probes_k8s.md](readme_probes_k8s.md)). Connects to Postgres. |
-| [`k8s/service.yaml`](k8s/service.yaml) | Service `salary-app` of type `NodePort`: port 80 inside the cluster, node port `30080` |
-| [`k8s/postgres.yaml`](k8s/postgres.yaml) | Secret `postgres` (DB name, user, password), headless Service `postgres`, and StatefulSet `postgres` (1 replica of `postgres:16-alpine`) with a 1Gi PersistentVolumeClaim |
-| [`k8s/seed-job.yaml`](k8s/seed-job.yaml) | Job `salary-seed`: runs the app image once to create the tables and import the seed data, then exits |
-| [`k8s/salary-app-config.yaml`](k8s/salary-app-config.yaml) | ConfigMap `salary-app-config`: non-secret settings (Spring profile, DB host/port, CORS origins) shared by the Deployment and the Job. See [readme_configmap_k8s.md](readme_configmap_k8s.md). |
+| File                                                       | What it creates                                                                                                                                                                                                        |
+|------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [`k8s/deployment.yaml`](k8s/deployment.yaml)               | Deployment `salary-app`: 5 replicas of image `ata-salary-services:1.7`, port 8080, startup/readiness/liveness probes on `/actuator/health/*` (see [readme_probes_k8s.md](readme_probes_k8s.md)). Connects to Postgres. |
+| [`k8s/service.yaml`](k8s/service.yaml)                     | Service `salary-app` of type `NodePort`: port 80 inside the cluster, node port `30080`                                                                                                                                 |
+| [`k8s/postgres.yaml`](k8s/postgres.yaml)                   | Secret `postgres` (DB name, user, password), headless Service `postgres`, and StatefulSet `postgres` (1 replica of `postgres:16-alpine`) with a 1Gi PersistentVolumeClaim                                              |
+| [`k8s/seed-job.yaml`](k8s/seed-job.yaml)                   | Job `salary-seed`: runs the app image once to create the tables and import the seed data, then exits                                                                                                                   |
+| [`k8s/salary-app-config.yaml`](k8s/salary-app-config.yaml) | ConfigMap `salary-app-config`: non-secret settings (Spring profile, DB host/port, CORS origins) shared by the Deployment and the Job. See [readme_configmap_k8s.md](readme_configmap_k8s.md).                          |
 
 How the pieces fit together:
 
 ```
-               kubectl port-forward / minikube service
-                              |
-                  Service salary-app (NodePort)
-                              |
-        salary-app pods x5 (Deployment)
-                              |
-                  Service postgres (headless)
-                              |
-  Job salary-seed  ----->  postgres-0 (StatefulSet)
-  (runs once:                 |
-   tables + data)      PVC data-postgres-0
-                              |
-                       PersistentVolume (minikube "standard" storage)
+                         kubectl port-forward / minikube service
+                                            |
+                              Service salary-app (NodePort)
+                                            |
+                             salary-app pods x5 (Deployment)
+                                            |
+                               Service postgres (headless)
+                                            |
+        Job salary-seed  ----->  postgres-0 (StatefulSet)
+        (runs once:                         |
+         tables + data)            PVC data-postgres-0
+                                            |
+                      PersistentVolume (minikube "standard" storage)
 ```
 
 All 5 app pods share one database, so they all see the same data. The data
@@ -366,22 +366,22 @@ kubectl rollout undo deployment/salary-app
 
 ## 8. Everyday commands
 
-| Task | Command |
-|------|---------|
-| List pods 					| `kubectl get pods -l app=salary-app -o wide` |
-| List pods with IMAGES column 	| `kubectl get rs -l app=salary-app -o wide` |
-| Logs of one pod 				| `kubectl logs <pod-name>` |
-| Follow logs of all pods 		| `kubectl logs -f -l app=salary-app --prefix` |
-| Pod details and events 		| `kubectl describe pod <pod-name>` |
-| Shell inside a pod 			| `kubectl exec -it <pod-name> -- sh` |
-| Scale replicas 				| `kubectl scale deployment/salary-app --replicas=2` |
-| Restart all pods 				| `kubectl rollout restart deployment/salary-app` |
-| Postgres logs 				| `kubectl logs postgres-0` |
-| SQL shell 					| `kubectl exec -it postgres-0 -- psql -U salary -d salary` |
-| Seed Job status / logs 		| `kubectl get job salary-seed` / `kubectl logs job/salary-seed` |
-| Logs of an init container 	| `kubectl logs <pod-name> -c wait-for-seed` |
-| Volumes 						| `kubectl get pvc,pv` |
-| Kubernetes dashboard 			| `minikube dashboard` |
+| Task                         | Command                                                        |
+|------------------------------|----------------------------------------------------------------|
+| List pods                    | `kubectl get pods -l app=salary-app -o wide`                   |
+| List pods with IMAGES column | `kubectl get rs -l app=salary-app -o wide`                     |
+| Logs of one pod              | `kubectl logs <pod-name>`                                      |
+| Follow logs of all pods      | `kubectl logs -f -l app=salary-app --prefix`                   |
+| Pod details and events       | `kubectl describe pod <pod-name>`                              |
+| Shell inside a pod           | `kubectl exec -it <pod-name> -- sh`                            |
+| Scale replicas               | `kubectl scale deployment/salary-app --replicas=2`             |
+| Restart all pods             | `kubectl rollout restart deployment/salary-app`                |
+| Postgres logs                | `kubectl logs postgres-0`                                      |
+| SQL shell                    | `kubectl exec -it postgres-0 -- psql -U salary -d salary`      |
+| Seed Job status / logs       | `kubectl get job salary-seed` / `kubectl logs job/salary-seed` |
+| Logs of an init container    | `kubectl logs <pod-name> -c wait-for-seed`                     |
+| Volumes                      | `kubectl get pvc,pv`                                           |
+| Kubernetes dashboard         | `minikube dashboard`                                           |
 
 `kubectl scale` changes only the live cluster; the next `kubectl apply -f k8s/`
 sets it back to the `replicas` value in the YAML.
@@ -448,18 +448,18 @@ minikube delete
 
 ## Troubleshooting
 
-| Symptom | Likely cause and fix |
-|---------|----------------------|
-| `ErrImagePull` / `ImagePullBackOff` | The image isn't in minikube, so Kubernetes tried Docker Hub. Run `minikube image load ata-salary-services:<tag>` and check the tag matches the Deployment exactly. |
-| Pods stuck in `Pending` | Not enough CPU/memory. `kubectl describe pod <pod-name>` shows `Insufficient memory`. Scale down (`kubectl scale deployment/salary-app --replicas=2`) or recreate minikube with more memory. |
-| `CrashLoopBackOff` | The app failed to start. Check `kubectl logs <pod-name> --previous`. |
-| `OOMKilled` in `kubectl describe pod` | The JVM exceeded the 1Gi limit. Raise `resources.limits.memory` in the Deployment. |
-| Pods `Running` but `READY 0/1` for a long time | The readiness probe is failing. Check `kubectl describe pod <pod-name>` events and the pod logs. |
-| `curl http://<minikube ip>:30080` times out | Expected with the Docker driver on Windows/macOS. Use port-forward or `minikube service` (step 5). |
-| New code not showing after rebuild | The tag didn't change, so pods still run the old image. See step 6. |
-| `kubectl` talks to the wrong cluster | Run `kubectl config use-context minikube`. |
-| `salary-app` pods stuck in `Init:0/1` | The `wait-for-seed` init container is waiting for data. Check `kubectl logs <pod-name> -c wait-for-seed`, then `kubectl get job salary-seed` and `kubectl logs job/salary-seed`. |
-| `salary-seed` Job `Failed` | Check `kubectl logs job/salary-seed`. Fix the cause, then run `kubectl delete job salary-seed` and `kubectl apply -f k8s/seed-job.yaml`. |
-| `postgres-0` and its PVC stuck in `Pending` | No volume was provisioned. Check `kubectl describe pvc data-postgres-0`, and make sure the storage addon is on with `minikube addons enable storage-provisioner`. |
-| App logs `Schema-validation: missing column/table` | The database schema is older than the code. Rerun the seed Job (step 7). |
-| App logs `password authentication failed` | The Secret changed after the database was created. See *Credentials* in step 6. |
+| Symptom                                            | Likely cause and fix                                                                                                                                                                         |
+|----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `ErrImagePull` / `ImagePullBackOff`                | The image isn't in minikube, so Kubernetes tried Docker Hub. Run `minikube image load ata-salary-services:<tag>` and check the tag matches the Deployment exactly.                           |
+| Pods stuck in `Pending`                            | Not enough CPU/memory. `kubectl describe pod <pod-name>` shows `Insufficient memory`. Scale down (`kubectl scale deployment/salary-app --replicas=2`) or recreate minikube with more memory. |
+| `CrashLoopBackOff`                                 | The app failed to start. Check `kubectl logs <pod-name> --previous`.                                                                                                                         |
+| `OOMKilled` in `kubectl describe pod`              | The JVM exceeded the 1Gi limit. Raise `resources.limits.memory` in the Deployment.                                                                                                           |
+| Pods `Running` but `READY 0/1` for a long time     | The readiness probe is failing. Check `kubectl describe pod <pod-name>` events and the pod logs.                                                                                             |
+| `curl http://<minikube ip>:30080` times out        | Expected with the Docker driver on Windows/macOS. Use port-forward or `minikube service` (step 5).                                                                                           |
+| New code not showing after rebuild                 | The tag didn't change, so pods still run the old image. See step 6.                                                                                                                          |
+| `kubectl` talks to the wrong cluster               | Run `kubectl config use-context minikube`.                                                                                                                                                   |
+| `salary-app` pods stuck in `Init:0/1`              | The `wait-for-seed` init container is waiting for data. Check `kubectl logs <pod-name> -c wait-for-seed`, then `kubectl get job salary-seed` and `kubectl logs job/salary-seed`.             |
+| `salary-seed` Job `Failed`                         | Check `kubectl logs job/salary-seed`. Fix the cause, then run `kubectl delete job salary-seed` and `kubectl apply -f k8s/seed-job.yaml`.                                                     |
+| `postgres-0` and its PVC stuck in `Pending`        | No volume was provisioned. Check `kubectl describe pvc data-postgres-0`, and make sure the storage addon is on with `minikube addons enable storage-provisioner`.                            |
+| App logs `Schema-validation: missing column/table` | The database schema is older than the code. Rerun the seed Job (step 7).                                                                                                                     |
+| App logs `password authentication failed`          | The Secret changed after the database was created. See *Credentials* in step 6.                                                                                                              |

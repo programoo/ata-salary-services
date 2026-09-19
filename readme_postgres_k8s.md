@@ -20,11 +20,11 @@ Windows
 
 The chain that connects them:
 
-| Object | Name | Role |
-|--------|------|------|
-| PersistentVolumeClaim | `data-postgres-0` | The pod's request for 1Gi of storage |
-| PersistentVolume | `pvc-...` (generated) | The storage minikube's `standard` StorageClass created for the claim |
-| hostPath on the node | `/tmp/hostpath-provisioner/default/data-postgres-0` | Where the files actually live |
+| Object                | Name                                                | Role                                                                 |
+|-----------------------|-----------------------------------------------------|----------------------------------------------------------------------|
+| PersistentVolumeClaim | `data-postgres-0`                                   | The pod's request for 1Gi of storage                                 |
+| PersistentVolume      | `pvc-...` (generated)                               | The storage minikube's `standard` StorageClass created for the claim |
+| hostPath on the node  | `/tmp/hostpath-provisioner/default/data-postgres-0` | Where the files actually live                                        |
 
 Check it yourself:
 
@@ -68,13 +68,13 @@ make the connection itself. Five pieces work together:
                               and connects with its connection pool (HikariCP)
 ```
 
-| Piece | What it does | What it doesn't do |
-|-------|--------------|--------------------|
-| **ConfigMap** `salary-app-config` ([`k8s/salary-app-config.yaml`](k8s/salary-app-config.yaml)) | Stores the non-secret settings: the `postgres` profile, `DB_HOST`, `DB_PORT`, CORS origins. See [readme_configmap_k8s.md](readme_configmap_k8s.md). | Update running pods when changed (restart them) |
-| **Secret** `postgres` ([`k8s/postgres.yaml`](k8s/postgres.yaml)) | Stores the database name, user and password once. Both Postgres and the app read them from here. | Encrypt anything (values are only base64-encoded) |
-| **Deployment** `salary-app` ([`k8s/deployment.yaml`](k8s/deployment.yaml)) | Loads the ConfigMap and Secret values into env vars, and waits for data before starting the app | Open or manage connections |
-| **Service** `postgres` ([`k8s/postgres.yaml`](k8s/postgres.yaml)) | Gives the database a stable DNS name, `postgres`, that points to whatever IP `postgres-0` currently has | Load balance: it's headless (`clusterIP: None`), so the name resolves straight to the pod IP |
-| **The app** ([`application-postgres.properties`](src/main/resources/application-postgres.properties)) | Builds the JDBC URL from the env vars, opens the connections, and reconnects if Postgres restarts | Know it's running in Kubernetes: it only sees env vars and a hostname |
+| Piece                                                                                                 | What it does                                                                                                                                        | What it doesn't do                                                                           |
+|-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| **ConfigMap** `salary-app-config` ([`k8s/salary-app-config.yaml`](k8s/salary-app-config.yaml))        | Stores the non-secret settings: the `postgres` profile, `DB_HOST`, `DB_PORT`, CORS origins. See [readme_configmap_k8s.md](readme_configmap_k8s.md). | Update running pods when changed (restart them)                                              |
+| **Secret** `postgres` ([`k8s/postgres.yaml`](k8s/postgres.yaml))                                      | Stores the database name, user and password once. Both Postgres and the app read them from here.                                                    | Encrypt anything (values are only base64-encoded)                                            |
+| **Deployment** `salary-app` ([`k8s/deployment.yaml`](k8s/deployment.yaml))                            | Loads the ConfigMap and Secret values into env vars, and waits for data before starting the app                                                     | Open or manage connections                                                                   |
+| **Service** `postgres` ([`k8s/postgres.yaml`](k8s/postgres.yaml))                                     | Gives the database a stable DNS name, `postgres`, that points to whatever IP `postgres-0` currently has                                             | Load balance: it's headless (`clusterIP: None`), so the name resolves straight to the pod IP |
+| **The app** ([`application-postgres.properties`](src/main/resources/application-postgres.properties)) | Builds the JDBC URL from the env vars, opens the connections, and reconnects if Postgres restarts                                                   | Know it's running in Kubernetes: it only sees env vars and a hostname                        |
 
 The **Service** is what makes this survive restarts. When `postgres-0` is
 recreated it usually gets a new IP. The name `postgres` then points to the
@@ -183,12 +183,12 @@ netstat -ano | findstr :5432
 
 In DBeaver: **Database → New Database Connection → PostgreSQL**, then:
 
-| Field | Value |
-|-------|-------|
-| Host | `localhost` |
-| Port | `15432` |
-| Database | `salary` |
-| Username | `salary` |
+| Field    | Value                 |
+|----------|-----------------------|
+| Host     | `localhost`           |
+| Port     | `15432`               |
+| Database | `salary`              |
+| Username | `salary`              |
 | Password | `salary-dev-password` |
 
 DBeaver may ask to download the PostgreSQL driver the first time. Click
@@ -196,10 +196,10 @@ DBeaver may ask to download the PostgreSQL driver the first time. Click
 
 The tables are under **salary → Schemas → public → Tables**:
 
-| Table | Contents |
-|-------|----------|
-| `salary_records` | 3,777 salary survey rows |
-| `orders` | 123 orders |
+| Table            | Contents                        |
+|------------------|---------------------------------|
+| `salary_records` | 3,777 salary survey rows        |
+| `orders`         | 123 orders                      |
 | `order_warnings` | Warning messages for each order |
 
 ### Good to know
@@ -248,21 +248,21 @@ In PowerShell, wrap each `-D...` argument in quotes.
 
 ## When is the data lost?
 
-| Action | Data kept? |
-|--------|-----------|
-| Restart or delete pod `postgres-0` | Yes |
-| `kubectl rollout restart` / deploy a new app version | Yes |
-| `kubectl delete -f k8s/` | Yes (the PVC is not deleted) |
-| `minikube stop` then `minikube start` | Yes |
-| `kubectl delete pvc data-postgres-0` | **No** |
-| `minikube delete` | **No** |
+| Action                                               | Data kept?                   |
+|------------------------------------------------------|------------------------------|
+| Restart or delete pod `postgres-0`                   | Yes                          |
+| `kubectl rollout restart` / deploy a new app version | Yes                          |
+| `kubectl delete -f k8s/`                             | Yes (the PVC is not deleted) |
+| `minikube stop` then `minikube start`                | Yes                          |
+| `kubectl delete pvc data-postgres-0`                 | **No**                       |
+| `minikube delete`                                    | **No**                       |
 
 ## Troubleshooting
 
-| Symptom | Likely cause and fix |
-|---------|----------------------|
-| DBeaver: `Connection refused` | The port-forward isn't running. Start it again (step 1). |
+| Symptom                                                     | Likely cause and fix                                                                                                  |
+|-------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| DBeaver: `Connection refused`                               | The port-forward isn't running. Start it again (step 1).                                                              |
 | DBeaver: `password authentication failed for user "salary"` | You're on port 5432 and reaching a different Postgres. Use port `15432`. Otherwise, check the password in the Secret. |
-| DBeaver connects but tables are missing or empty | Wrong database or port. Check the database is `salary` and the port is `15432`. |
-| `port-forward` fails with `address already in use` | Something else is using 15432. Pick another local port, e.g. `25432:5432`, and use it in DBeaver. |
-| `port-forward` exits with `lost connection to pod` | `postgres-0` restarted. Wait for `kubectl get pod postgres-0` to show `1/1 Running`, then start the tunnel again. |
+| DBeaver connects but tables are missing or empty            | Wrong database or port. Check the database is `salary` and the port is `15432`.                                       |
+| `port-forward` fails with `address already in use`          | Something else is using 15432. Pick another local port, e.g. `25432:5432`, and use it in DBeaver.                     |
+| `port-forward` exits with `lost connection to pod`          | `postgres-0` restarted. Wait for `kubectl get pod postgres-0` to show `1/1 Running`, then start the tunnel again.     |

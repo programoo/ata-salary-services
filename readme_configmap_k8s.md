@@ -9,12 +9,12 @@ happens when you change one. Assumes the app is deployed as described in
 Both hold key/value settings outside the image. The difference is what goes
 in them:
 
-| | ConfigMap `salary-app-config` | Secret `postgres` |
-|---|---|---|
-| File | [`k8s/salary-app-config.yaml`](k8s/salary-app-config.yaml) | [`k8s/postgres.yaml`](k8s/postgres.yaml) |
-| Holds | Profile, DB host/port, CORS origins | DB name, user, password |
-| Stored as | Plain text | base64 (not encrypted, but kept separate so access can be restricted with RBAC) |
-| Shown by `kubectl describe` | Values shown | Values hidden |
+|                             | ConfigMap `salary-app-config`                              | Secret `postgres`                                                               |
+|-----------------------------|------------------------------------------------------------|---------------------------------------------------------------------------------|
+| File                        | [`k8s/salary-app-config.yaml`](k8s/salary-app-config.yaml) | [`k8s/postgres.yaml`](k8s/postgres.yaml)                                        |
+| Holds                       | Profile, DB host/port, CORS origins                        | DB name, user, password                                                         |
+| Stored as                   | Plain text                                                 | base64 (not encrypted, but kept separate so access can be restricted with RBAC) |
+| Shown by `kubectl describe` | Values shown                                               | Values hidden                                                                   |
 
 Rule of thumb: if leaking the value would be a security problem, it goes in
 a Secret. Everything else goes in a ConfigMap.
@@ -64,11 +64,11 @@ env:
 **3. `env` with `value`: settings for just one workload.** These stay inline
 because they differ between the app and the Job:
 
-| Setting | App pods | Seed Job |
-|---|---|---|
-| `SPRING_JPA_HIBERNATE_DDL_AUTO` | `validate` | `update` |
-| `APP_DATA_IMPORT_ENABLED` | `false` | `true` |
-| `SPRING_MAIN_WEB_APPLICATION_TYPE` | (not set) | `none` |
+| Setting                            | App pods   | Seed Job |
+|------------------------------------|------------|----------|
+| `SPRING_JPA_HIBERNATE_DDL_AUTO`    | `validate` | `update` |
+| `APP_DATA_IMPORT_ENABLED`          | `false`    | `true`   |
+| `SPRING_MAIN_WEB_APPLICATION_TYPE` | (not set)  | `none`   |
 
 If the same name appears in both `envFrom` and `env`, the `env` entry wins.
 
@@ -245,11 +245,11 @@ Prefer editing the YAML and applying it, so git stays the source of truth.
 
 ## Env vars vs mounted files
 
-| | Env vars (`envFrom`, `configMapKeyRef`) | Volume mount (each key becomes a file) |
-|---|---|---|
-| Picks up changes | Only after a pod restart | Files update in the running pod after about a minute |
-| App must... | Nothing special | Re-read the file, or be restarted anyway |
-| Good for | Simple settings like this app's | Whole config files (`nginx.conf`, `logback.xml`) |
+|                  | Env vars (`envFrom`, `configMapKeyRef`) | Volume mount (each key becomes a file)               |
+|------------------|-----------------------------------------|------------------------------------------------------|
+| Picks up changes | Only after a pod restart                | Files update in the running pod after about a minute |
+| App must...      | Nothing special                         | Re-read the file, or be restarted anyway             |
+| Good for         | Simple settings like this app's         | Whole config files (`nginx.conf`, `logback.xml`)     |
 
 Spring Boot reads its settings only at startup, so a mount would still need a
 restart. That's why this project uses env vars.
@@ -260,22 +260,22 @@ the config changes.
 
 ## Quick reference
 
-| Task | Command |
-|---|---|
-| List ConfigMaps | `kubectl get configmaps` |
-| Show values | `kubectl get configmap salary-app-config -o yaml` |
-| Create one from the command line | `kubectl create configmap demo --from-literal=KEY=value` |
-| Create one from a file | `kubectl create configmap demo --from-file=application.properties` |
-| Preview changes | `kubectl diff -f k8s/salary-app-config.yaml` |
-| Apply changes | `kubectl apply -f k8s/salary-app-config.yaml` |
-| Make pods use the new values | `kubectl rollout restart deployment/salary-app` |
-| Check a value inside a pod | `kubectl exec deploy/salary-app -c salary-app -- printenv APP_CORS_ALLOWED_ORIGINS` |
+| Task                             | Command                                                                             |
+|----------------------------------|-------------------------------------------------------------------------------------|
+| List ConfigMaps                  | `kubectl get configmaps`                                                            |
+| Show values                      | `kubectl get configmap salary-app-config -o yaml`                                   |
+| Create one from the command line | `kubectl create configmap demo --from-literal=KEY=value`                            |
+| Create one from a file           | `kubectl create configmap demo --from-file=application.properties`                  |
+| Preview changes                  | `kubectl diff -f k8s/salary-app-config.yaml`                                        |
+| Apply changes                    | `kubectl apply -f k8s/salary-app-config.yaml`                                       |
+| Make pods use the new values     | `kubectl rollout restart deployment/salary-app`                                     |
+| Check a value inside a pod       | `kubectl exec deploy/salary-app -c salary-app -- printenv APP_CORS_ALLOWED_ORIGINS` |
 
 ## Troubleshooting
 
-| Symptom | Likely cause and fix |
-|---|---|
-| Pod stuck in `CreateContainerConfigError` | The ConfigMap, or a key named in `configMapKeyRef`, doesn't exist. `kubectl describe pod <pod-name>` names it. Apply `k8s/salary-app-config.yaml`. |
-| Changed a value but the app still uses the old one | Pods weren't restarted. Run `kubectl rollout restart deployment/salary-app`. |
-| Your change disappeared | Someone ran `kubectl apply -f k8s/` with the old file. Put the change in the YAML. |
-| `apply` fails with `cannot unmarshal number into Go struct field ConfigMap.data of type string` | A number or `true`/`false` wasn't quoted. Write `DB_PORT: "5432"`. |
+| Symptom                                                                                         | Likely cause and fix                                                                                                                               |
+|-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Pod stuck in `CreateContainerConfigError`                                                       | The ConfigMap, or a key named in `configMapKeyRef`, doesn't exist. `kubectl describe pod <pod-name>` names it. Apply `k8s/salary-app-config.yaml`. |
+| Changed a value but the app still uses the old one                                              | Pods weren't restarted. Run `kubectl rollout restart deployment/salary-app`.                                                                       |
+| Your change disappeared                                                                         | Someone ran `kubectl apply -f k8s/` with the old file. Put the change in the YAML.                                                                 |
+| `apply` fails with `cannot unmarshal number into Go struct field ConfigMap.data of type string` | A number or `true`/`false` wasn't quoted. Write `DB_PORT: "5432"`.                                                                                 |
